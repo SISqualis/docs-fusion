@@ -4,58 +4,56 @@ on:
   push:
     branches:
       - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  deploy:
-    name: Deploy to GitHub Pages
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
           cache-dependency-path: fusion/package-lock.json
 
-      - name: Debug directory structure
-        run: |
-          pwd
-          ls -la
-          ls -la fusion/
-          
-      - name: Install dependencies
-        run: |
-          cd fusion
-          npm ci
-          
-      - name: Build website
-        run: |
-          cd fusion
-          npm run build
-          
-      - name: Verify build output
-        run: |
-          ls -la fusion/build/
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        
+      - name: Install dependencies
+        working-directory: ./fusion
+        run: npm ci
+        
+      - name: Build with Docusaurus
+        working-directory: ./fusion
+        run: npm run build
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload build from fusion directory
-          path: fusion/build
+          path: ./fusion/build
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
