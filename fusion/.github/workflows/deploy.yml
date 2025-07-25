@@ -13,11 +13,10 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment, canceling any previous runs automatically
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
 
 env:
   # Hosted GitHub runners have 7 GB of RAM available, let's use 6 GB
@@ -25,6 +24,7 @@ env:
 
 jobs:
   deploy:
+    timeout-minutes: 15  # Force timeout after 15 minutes
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
