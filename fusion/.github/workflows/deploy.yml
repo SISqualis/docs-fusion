@@ -4,49 +4,33 @@ on:
   push:
     branches:
       - main
-      - master
-  # Review gh actions docs if you want to further define triggers, paths, etc
-  # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, canceling any previous runs automatically
-concurrency:
-  group: "pages-${{ github.ref }}"
-  cancel-in-progress: true
-
-env:
-  # Hosted GitHub runners have 7 GB of RAM available, let's use 6 GB
-  NODE_OPTIONS: --max_old_space_size=6144
-
 jobs:
   deploy:
-    timeout-minutes: 15  # Force timeout after 15 minutes
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      # - uses: pnpm/action-setup@v3 # Uncomment this if you use pnpm
-      # - uses: oven-sh/setup-bun@v1 # Uncomment this if you use Bun
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
 
       - name: Install dependencies
-        working-directory: ./fusion
         run: npm ci
       - name: Build website
-        working-directory: ./fusion
         run: npm run build
 
       - name: Setup Pages
@@ -55,7 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: ./fusion/build
+          path: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
