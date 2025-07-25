@@ -1,0 +1,57 @@
+---
+sidebar_position: 55
+title: Organizações
+---
+
+import Admonition from '@theme/Admonition';
+
+# Organizações
+
+O módulo **Organizações** é um cadastro genérico utilizado para registrar diversas entidades que se relacionam com a instituição de saúde, como empresas conveniadas, fornecedores, ou outras organizações parceiras. Este cadastro permite centralizar informações sobre essas entidades para uso em diferentes contextos dentro do sistema Fusion.
+
+---
+
+## Acessando o Cadastro de Organizações
+
+1.  No menu lateral, localize e clique na opção **Organizações**.
+
+Você será direcionado para a tela "Organizações", que lista todas as entidades cadastradas.
+
+-   **Filtro de Organizações**:
+    -   **Id**: Permite buscar pelo identificador único da organização.
+    -   **Nome**: Permite buscar pelo nome da organização.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da organização.
+    -   **Nome**: Nome da organização (ex: Organização de Teste 1).
+    -   Cada organização listada possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Organizações](/img/lista_org.png)
+
+---
+
+## Criando ou Editando uma Organização
+
+Para **adicionar** uma nova organização, clique no botão **+ Nova Organização** localizado no canto superior direito da tela de listagem.
+Para **editar** uma organização existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção de Organização" permite configurar os detalhes da entidade.
+
+<Admonition type="info" title="Campos de Cadastro da Organização">
+-   **Id**: Identificador único da organização no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da organização.
+-   **Códigos de De/Para**: (Inferido com base na estrutura padrão do Fusion) Embora não visível na captura de tela, esta seção é tipicamente presente para mapear a organização com códigos correspondentes em sistemas externos para fins de interoperabilidade.
+
+</Admonition>
+
+![Edição de Organização](/img/edit_org.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Organizações">
+-   **Uso Abrangente**: Utilize este cadastro para centralizar informações de entidades que não se encaixam em "Cadastro Instituição" (estabelecimentos de saúde) ou outros cadastros específicos.
+-   **Evite Duplicidade**: Antes de cadastrar uma nova organização, realize uma busca para garantir que ela ainda não existe no sistema.
+-   **Padronização de Nomes**: Use os nomes oficiais ou razões sociais das organizações para manter o cadastro limpo e facilitar as buscas.
+-   **Dados de Contato**: Se houver campos ou abas para dados de contato (endereços, telefones), preencha-os para que o cadastro sirva como um diretório completo.
+</Admonition>

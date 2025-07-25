@@ -1,0 +1,62 @@
+---
+sidebar_position: 45
+title: Recursos
+---
+
+import Admonition from '@theme/Admonition';
+
+# Recursos
+
+O módulo **Recursos** é um cadastro central no Fusion, utilizado para definir itens, serviços ou locais que podem ser agendados ou solicitados, como exames, procedimentos, equipamentos ou salas. Este módulo integra as informações cadastradas em "Tipos de Detalhes de Recursos" and "Detalhes de Recursos" para caracterizar completamente cada recurso, além de possuir seus próprios mapeamentos para integrações.
+
+---
+
+## Acessando o Cadastro de Recursos
+
+1.  No menu lateral, localize e clique na opção **Recurso**.
+
+Você será direcionado para a tela "Listagem de Recursos", que exibe todos os recursos cadastrados na instituição.
+
+-   **Filtro de Listagem de Recursos**:
+    -   **Id**: Permite buscar pelo identificador único do recurso.
+    -   **Nome**: Permite buscar pelo nome do recurso.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do recurso.
+    -   **Nome**: Nome do recurso (ex: TC COM CONTRASTE E SEDAÇÃO, TOMOGRAFIA COMPUTADORIZADA DO CRANIO).
+    -   Cada recurso listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Recursos](/img/lista_recursos.png)
+
+---
+
+## Criando ou Editando um Recurso
+
+Para **adicionar** um novo recurso, clique no botão **+ Novo Recurso** localizado no canto superior direito da tela de listagem.
+Para **editar** um recurso existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção de Recurso" permite configurar todos os aspectos do recurso:
+
+<Admonition type="info" title="Campos de Cadastro do Recurso">
+-   **Id**: Identificador único do recurso no sistema (ex: 2).
+-   **Somente Atendimento Interno**: Caixa de seleção para indicar se o recurso é exclusivo para uso interno.
+-   **Nome\***: Campo obrigatório para o nome do recurso (ex: TC COM CONTRASTE E SEDAÇÃO).
+-   **Abas de Configuração**:
+    -   **Detalhes**: Permite associar características específicas ao recurso.
+        -   Você pode adicionar um detalhe clicando no botão verde "+".
+        -   Cada linha associa um **Detalhe** (ex: COM SEDAÇÃO) a um **Tipo do Detalhe** (ex: Anestesia), que foram previamente cadastrados nos módulos correspondentes.
+    -   **De/Paras**: Permite mapear o recurso com códigos de sistemas externos para garantir a interoperabilidade (funcionalidade similar aos módulos anteriores).
+
+</Admonition>
+
+![Edição de Recurso](/img/edit_recursos.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Recursos">
+-   **Cadastro Estruturado**: Pense neste módulo como o ponto central que une as informações. Antes de cadastrar um recurso, garanta que seus "Tipos de Detalhes" e "Detalhes" já existam, se necessário.
+-   **Nomenclatura Clara**: Use nomes que identifiquem o recurso de forma inequívoca para os usuários que farão solicitações ou agendamentos.
+-   **Use os Detalhes**: Aproveite a aba "Detalhes" para enriquecer a descrição do recurso. Isso pode ser crucial para o agendamento correto, como saber se uma Tomografia requer contraste, sedação, etc.
+-   **Atendimento Interno vs. Externo**: Utilize a opção "Somente Atendimento Interno" corretamente para controlar a disponibilidade do recurso para diferentes públicos (ex: pacientes internados vs. ambulatoriais).
+</Admonition>

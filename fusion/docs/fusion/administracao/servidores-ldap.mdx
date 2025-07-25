@@ -1,0 +1,47 @@
+---
+sidebar_position: 8
+---
+
+import Admonition from '@theme/Admonition';
+import { KeyRound, Server, UserCheck, ShieldCheck } from 'lucide-react'; // Ícones ilustrativos
+
+# Servidores LDAP
+
+A autenticação de usuários é um pilar fundamental da segurança e usabilidade de qualquer sistema. O Fusion oferece integração com **Servidores LDAP (Lightweight Directory Access Protocol)** para simplificar e agilizar o processo de login, promovendo uma experiência de acesso mais fluida e segura para os usuários.
+
+<Admonition type="info" title="O Que é LDAP e Seus Benefícios?" icon={<Server />}>
+  <p>
+    LDAP é um protocolo padrão de mercado para acessar e manter serviços de informação de diretório distribuídos. Ao integrar-se com um servidor LDAP (como o Active Directory da Microsoft), o Fusion pode centralizar a autenticação, permitindo que os usuários utilizem suas credenciais de rede existentes (por exemplo, as mesmas usadas para login no Windows) para acessar o sistema. Isso reduz a necessidade de memorizar múltiplas senhas e simplifica a gestão de identidades pela equipe de TI.
+  </p>
+</Admonition>
+
+## Agilidade e Segurança no Login com LDAP
+
+A principal vantagem da utilização de LDAP no Fusion é a agilidade no processo de login. Conforme descrito, para dar agilidade ao processo de login no sistema, utilizando os serviços LDAP, o sistema permite validar o usuário e a senha com as mesmas credenciais de acesso ao Windows do computador do usuário.
+
+Isso se traduz em:
+
+* **Conveniência para o Usuário:** Elimina a necessidade de lembrar de um conjunto separado de credenciais para o Fusion, utilizando um login já familiar.
+* **Eficiência Operacional:** Reduz o tempo gasto em processos de login e recuperação de senhas específicas do sistema.
+* **Segurança Aprimorada:** Aproveita as políticas de segurança já implementadas no diretório LDAP da organização (como requisitos de complexidade de senha, expiração, etc.).
+
+A imagem abaixo ilustra a interface ou o conceito relacionado à configuração de servidores LDAP no Fusion:
+
+<img src="/doc/img/8.1_servidor_ldap.png" alt="Tela de Configuração de Servidor LDAP no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para configuração da integração com servidor LDAP.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Login Unificado" icon={<UserCheck />}>
+  <p>
+    A integração LDAP efetivamente proporciona uma experiência de <strong>login unificado</strong> (ou "single sign-on" parcial), onde as credenciais de rede corporativa são suficientes para acessar o Fusion. Isso não apenas melhora a satisfação do usuário, mas também otimiza a administração de acessos.
+  </p>
+</Admonition>
+
+<Admonition type="warning" title="Considerações de Segurança" icon={<ShieldCheck />}>
+  <p>
+    Ao configurar a integração LDAP, é crucial garantir que a comunicação entre o Fusion e o servidor LDAP seja segura (por exemplo, utilizando LDAPS - LDAP sobre SSL/TLS) para proteger as credenciais durante o processo de autenticação. As políticas de acesso e as permissões dentro do Fusion ainda são gerenciadas pelo sistema, mesmo após a autenticação via LDAP.
+  </p>
+</Admonition>
+
+A integração com Servidores LDAP no Fusion é uma funcionalidade valiosa para otimizar a autenticação de usuários, tornando-a mais ágil, conveniente e alinhada com as práticas de gerenciamento de identidades corporativas.

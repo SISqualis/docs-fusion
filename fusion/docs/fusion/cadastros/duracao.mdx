@@ -1,0 +1,50 @@
+---
+sidebar_position: 13
+title: Duração
+---
+
+import Admonition from '@theme/Admonition';
+
+# Duração
+
+O módulo **Duração** permite o cadastro de períodos de tempo padronizados no sistema, utilizados em prescrições, registros de eventos e integração com outros sistemas. É possível definir unidades como dias, semanas ou meses, bem como associar fatores de conversão e códigos externos.
+
+---
+
+## Acessando o Cadastro
+
+1. No menu lateral, clique em **Cadastros**.
+2. Em seguida, selecione a opção **Duração**.
+
+A tela exibirá uma lista com as durações já cadastradas, contendo:
+
+- **Id**: Identificador único.
+- **Nome**: Nome da duração (ex: Um dia, 7 DIAS, 3 MESES).
+
+![Listagem de Durações](/img/lista_duracao.png)
+
+---
+
+## Criando ou Editando uma Duração
+
+Para **adicionar** uma nova duração, clique em **+ Novo Duração**.  
+Para **editar**, clique no botão **Editar** ao lado da duração desejada.
+
+<Admonition type="info" title="Campos de Cadastro">
+- **Nome**: Nome da duração (ex: "Um dia", "30 DIAS").
+- **Unidade Medida**: Seleção da unidade (Dia, Semana, Mês, etc.).
+- **Fator**: Número correspondente à unidade base (ex: 1 para um dia, 30 para um mês).
+- **Códigos de De/Para**: Utilizado para mapeamento em integrações com sistemas como MV, Tasy, HOSPITAL MODELO, etc.
+</Admonition>
+
+![Edição de Duração](/img/edit_duracao.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas">
+- Utilize uma nomenclatura padronizada para evitar confusões na visualização.
+- Sempre preencha corretamente o fator de conversão.
+- Mantenha os campos de De/Para atualizados conforme o sistema de origem para garantir a interoperabilidade.
+</Admonition>

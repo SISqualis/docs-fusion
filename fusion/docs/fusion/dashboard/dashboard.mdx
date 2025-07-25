@@ -1,0 +1,64 @@
+---
+sidebar_position: 1
+title: Dashboard no Fusion
+---
+
+import Admonition from '@theme/Admonition';
+
+# Dashboard no Fusion
+
+O módulo **Dashboard** do Fusion permite a visualização de indicadores, alertas e informações consolidadas sobre a operação do sistema. É uma ferramenta essencial para monitoramento em tempo real de integrações, atendimentos, erros e outros dados relevantes da instituição.
+
+---
+
+## Acesso ao Dashboard
+
+1. No menu lateral, clique em **Dashboards**.
+2. A tela principal exibirá **cards dinâmicos** com informações configuráveis.
+
+---
+
+## Cards Visuais
+
+- **Quantidade de erros**: indica falhas nas integrações.
+- **Mapa de localização**: usado para representar a origem ou destino das integrações ou eventos.
+- **Gráficos e mapas** adicionais: permitem personalizar a visualização conforme o contexto do painel.
+
+![Dashboard - Quantidade de Erros](/img/dashboard.png)
+
+<Admonition type="warning" title="Erro comum ao carregar componente">
+**Erro:** `3F000: schema "dbo" does not exist POSITION: 8`
+
+Esse erro indica que o schema "dbo" não foi encontrado na base de dados configurada.  
+Verifique:
+
+- Se a conexão com a base está ativa.
+- Se o schema "dbo" realmente existe e está populado.
+- Se o usuário tem permissão para acessar esse schema.
+
+A falha pode impactar os gráficos ou cards conectados àquela consulta.
+</Admonition>
+
+---
+
+## Filtros e Período de Consulta
+
+No topo da tela, é possível definir um intervalo de tempo:
+
+- **Data de início**
+- **Data final**
+
+Isso permite restringir os dados apresentados ao período desejado.
+
+---
+
+## Funções Extras
+
+- 🔄 **Atualizar painel**  
+- ➕ **Adicionar novo card/gráfico**  
+- 📏 **Redimensionar/organizar visualmente os elementos do dashboard**
+
+<Admonition type="tip" title="Dica de uso">
+Mantenha seus dashboards organizados por contexto (ex: integrações, erros, atendimentos), evitando sobrecarga visual e facilitando a análise.
+</Admonition>
+

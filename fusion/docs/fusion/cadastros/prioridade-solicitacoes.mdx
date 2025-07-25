@@ -1,0 +1,67 @@
+---
+sidebar_position: 41
+title: Prioridade de Solicitações
+---
+
+import Admonition from '@theme/Admonition';
+
+# Prioridade de Solicitações
+
+O módulo **Prioridade de Solicitações** no sistema Fusion é utilizado para cadastrar e gerenciar os diferentes níveis de prioridade que podem ser atribuídos a diversas solicitações dentro do ambiente hospitalar, como exames, procedimentos, interconsultas, entre outros. Este cadastro ajuda a organizar o fluxo de trabalho, otimizar o atendimento e garantir que as solicitações mais urgentes sejam tratadas adequadamente. A padronização e o mapeamento para integrações são importantes para a consistência da informação entre sistemas.
+
+---
+
+## Acessando o Cadastro de Prioridade de Solicitações
+
+1.  No menu lateral, localize e clique na opção **Prioridade de Solicitação**.
+
+Você será direcionado para a tela "Listagem de Prioridade de Solicitações", que exibe os níveis de prioridade já cadastrados e permite a filtragem para facilitar a busca:
+
+-   **Filtro de Prioridade de Solicitação**:
+    -   **Id**: Permite buscar pelo identificador único do nível de prioridade.
+    -   **Nome**: Permite buscar pela descrição do nível de prioridade.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do nível de prioridade.
+    -   **Nome**: Descrição do nível de prioridade da solicitação (ex: BAIXA, ALTA, MÉDIA).
+    -   Cada nível listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Prioridade de Solicitações](/img/lista_priori_soli.png)
+
+---
+
+## Criando ou Editando um Nível de Prioridade de Solicitação
+
+Para **adicionar** um novo nível de prioridade, clique no botão **+ Nova Prioridade de Solicitação** localizado no canto superior direito da tela de listagem.
+Para **editar** um nível de prioridade existente, utilize o botão **Editar** ao lado do nível desejado na listagem.
+
+A tela de "Manutenção Prioridade de Solicitação" permite configurar os detalhes do nível de prioridade e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro da Prioridade de Solicitação">
+-   **Id**: Identificador único do nível de prioridade no sistema Fusion (geralmente não editável ou preenchido automaticamente).
+-   **Nome\***: Campo obrigatório para a descrição do nível de prioridade (ex: BAIXA).
+-   **Códigos de De/Para**: Seção utilizada para mapear o nível de prioridade com códigos correspondentes em sistemas externos integrados.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código do nível de prioridade no respectivo sistema integrado (ex: B para Integração MV).
+    -   Campos específicos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+        -   Outra integração
+</Admonition>
+
+![Edição de Prioridade de Solicitação](/img/edit_priori_soli.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Prioridade de Solicitações">
+-   **Terminologia Clara e Objetiva**: Utilize termos universally understood para os níveis de prioridade (ex: Urgente, Alta, Média, Baixa, Rotina).
+-   **Defina Critérios de Uso**: É recomendável que a instituição defina critérios claros para a aplicação de cada nível de prioridade, garantindo o uso consistente pelos solicitantes.
+-   **Mapeamento Preciso para Integrações**: A correta configuração dos "Códigos de De/Para" é fundamental para que os sistemas de execução (laboratório, radiologia, etc.) interpretem corretamente a urgência da solicitação.
+-   **Número Adequado de Níveis**: Evite criar um número excessivo de níveis de prioridade, o que pode gerar confusão. Geralmente, de 3 a 5 níveis são suficientes para a maioria dos cenários.
+-   **Revisão Contínua**: Periodicamente, revise os níveis de prioridade e seus critérios de uso para garantir que ainda atendem às necessidades da instituição e estão alinhados com os processos assistenciais.
+</Admonition>

@@ -1,0 +1,48 @@
+---
+sidebar_position: 17
+---
+
+import Admonition from '@theme/Admonition';
+import { Settings, SlidersHorizontal, Cog, ShieldHalf } from 'lucide-react'; // Ícones ilustrativos
+
+# Parametrização
+
+A flexibilidade e adaptabilidade de um sistema de informação são cruciais para atender às diversas necessidades e fluxos de trabalho de diferentes instituições de saúde. A seção de "Parametrização do Sistema" no Fusion é a área central onde administradores e usuários com privilégios adequados podem configurar e ajustar diversos aspectos do comportamento e funcionamento da plataforma.
+
+<Admonition type="info" title="O Que é a Parametrização do Sistema?" icon={<Settings />}>
+  <p>
+    Parametrização do Sistema refere-se ao processo de definir ou modificar as configurações que controlam como o Fusion opera. Isso pode abranger desde configurações globais que afetam todo o sistema até ajustes específicos de módulos ou funcionalidades. O objetivo é moldar o software para que ele se alinhe da melhor forma possível com os processos e requisitos da organização.
+  </p>
+</Admonition>
+
+## Ajustando o Fusion às Necessidades da Instituição
+
+A tela de parametrização permite configurar uma ampla gama de definições, que podem incluir, por exemplo:
+
+* **Configurações Gerais:** Formatos de data e hora, padrões de moeda, configurações de idioma ou regionalização.
+* **Parâmetros de Módulos:** Ajustes específicos para diferentes módulos do sistema (ex: agendamento, internação, faturamento), como valores padrão, regras de negócio, ou ativação/desativação de subfuncionalidades.
+* **Integrações:** Configurações de alto nível para a comunicação com outros sistemas, como endpoints de serviços ou chaves de API (os detalhes mais finos de cada integração seriam em suas respectivas seções).
+* **Segurança:** Definição de políticas de senha, tempos de sessão, configurações de auditoria de acesso, entre outros.
+* **Notificações e Alertas:** Configurações gerais para o sistema de notificações e alertas, como canais de envio padrão ou templates.
+* **Valores Padrão e Listas:** Gerenciamento de listas de opções (ex: tipos de documento, especialidades médicas) e definição de valores padrão para campos em diversas telas.
+
+A imagem abaixo ilustra a interface onde a parametrização do sistema é realizada no Fusion:
+
+<img src="/doc/img/17_parametrizacao_do_sistema.png" alt="Tela de Parametrização do Sistema no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para configuração dos parâmetros do sistema.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Customização e Controle" icon={<SlidersHorizontal />}>
+  <p>
+    Através da parametrização, as instituições podem customizar significativamente a experiência de uso e o comportamento do Fusion, sem a necessidade de desenvolvimento de código. Isso proporciona um alto grau de controle sobre como o sistema suporta os processos locais.
+  </p>
+</Admonition>
+
+<Admonition type="warning" title="Impacto das Configurações" icon={<Cog />}>
+  <p>
+    Alterações nos parâmetros do sistema podem ter um impacto amplo e significativo no seu funcionamento. É crucial que essas configurações sejam realizadas por pessoal qualificado, com pleno entendimento das implicações de cada parâmetro. Recomenda-se testar as alterações em um ambiente de homologação antes de aplicá-las em produção.
+  </p>
+</Admonition>
+
+A seção de Parametrização do Sistema é, portanto, um componente chave para a administração do Fusion, garantindo que a plataforma possa ser finamente ajustada para operar de maneira otimizada e em conformidade com as políticas e necessidades de cada organização de saúde.

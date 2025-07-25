@@ -1,0 +1,46 @@
+---
+sidebar_position: 13
+---
+
+import Admonition from '@theme/Admonition';
+import { AlertTriangle, Users, Settings, Bell } from 'lucide-react'; // Ícones ilustrativos
+
+# Grupos de Alertas
+
+Expandindo a funcionalidade de alertas parametrizados, o Fusion oferece a capacidade de criar e gerenciar "Grupos de Alertas". Esta funcionalidade permite uma organização mais refinada e direcionada das notificações do sistema, baseando-se no mesmo princípio dos alertas individuais, mas com a flexibilidade de agrupá-los de forma específica.
+
+<Admonition type="info" title="O Conceito de Grupos de Alertas" icon={<AlertTriangle />}>
+  <p>
+    A funcionalidade de "Grupo Alertas" opera sob o "Mesmo principio do alerta, porem este pode ser criado grupos específicos e assim alertados". Isso significa que, enquanto os alertas individuais são disparados por condições específicas, os grupos de alertas permitem agregar diferentes tipos de alertas ou direcionar conjuntos de notificações para contextos ou equipes particulares.
+  </p>
+</Admonition>
+
+## Vantagens da Criação de Grupos de Alertas
+
+Agrupar alertas oferece uma série de benefícios para a gestão e monitoramento de eventos no sistema:
+
+* **Organização Aprimorada:** Permite categorizar alertas por tipo, severidade, área clínica, departamento responsável, ou qualquer outro critério relevante para a instituição.
+* **Notificações Direcionadas:** Facilita o envio de alertas específicos para os grupos de usuários corretos. Por exemplo, um grupo de alertas de "UTI Neonatal" pode ser direcionado apenas para a equipe dessa unidade.
+* **Gestão Simplificada:** Torna mais fácil gerenciar as configurações e o comportamento de múltiplos alertas que compartilham um contexto comum.
+* **Fluxos de Trabalho Específicos:** Diferentes grupos de alertas podem ter diferentes protocolos de resposta ou escalonamento associados.
+
+A imagem abaixo ilustra a interface onde os grupos de alertas podem ser criados ou gerenciados no Fusion:
+
+<img src="/doc/img/13_grupo_alerta.png" alt="Tela de Grupos de Alertas no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para criação e gerenciamento de grupos específicos de alertas.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Segmentação e Relevância" icon={<Users />}>
+  <p>
+    A criação de grupos de alertas permite segmentar as notificações, garantindo que as equipes recebam apenas os alertas que são relevantes para suas funções e responsabilidades. Isso ajuda a evitar a "fadiga de alertas" e assegura que as notificações importantes recebam a devida atenção.
+  </p>
+</Admonition>
+
+<Admonition type="note" title="Configuração e Parametrização" icon={<Settings />}>
+  <p>
+    Assim como os alertas individuais, os grupos de alertas também dependem de uma parametrização cuidadosa. A definição de quais alertas compõem cada grupo e quem deve ser notificado por cada grupo são etapas cruciais da configuração para garantir a eficácia do sistema.
+  </p>
+</Admonition>
+
+A funcionalidade de "Grupo Alertas" no Fusion adiciona uma camada de sofisticação e controle ao sistema de notificações, permitindo uma gestão mais granular e eficiente dos alertas, adaptada às necessidades específicas de diferentes equipes e contextos dentro da instituição de saúde.

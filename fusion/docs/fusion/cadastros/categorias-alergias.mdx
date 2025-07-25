@@ -1,0 +1,59 @@
+---
+sidebar_position: 2
+title: Categorias de Alergia
+---
+
+import Admonition from '@theme/Admonition';
+
+# Categorias de Alergia
+
+O cadastro de **Categorias de Alergia** permite classificar os alérgenos registrados no sistema Fusion. Essa classificação auxilia a organização das informações clínicas, a padronização de dados e a integração entre sistemas distintos.
+
+---
+
+## Acessando Categorias de Alergia
+
+1. No menu lateral, clique em **Cadastros**.
+2. Em seguida, clique em **Categorias Alergia**.
+
+A tela exibirá uma lista de categorias já cadastradas, com colunas de **Id**, **Nome** e opções de ação.
+
+![Tela de Listagem de Categorias de Alergia](/img/lista_cat_alergias.png)
+
+---
+
+## Criando ou Editando uma Categoria
+
+Clique no botão **+ Nova Categoria Alergia** ou em **Editar** para acessar a tela de manutenção.
+
+<Admonition type="info" title="Campos disponíveis">
+- **Nome**: Nome da categoria (ex: Alimentar, Medicamentosa, Outros).
+- **Códigos de De/Para**: Mapeamentos para sistemas externos de integração como:
+  - MV
+  - Tasy
+  - HMED
+  - Integrador DF
+</Admonition>
+
+![Tela de Manutenção de Categoria Alergia](/img/edit_cat_alergias.png)
+
+---
+
+## Integração De/Para
+
+Esses campos permitem o correto mapeamento da categoria entre diferentes sistemas, assegurando que os dados de alergia sejam compreendidos da mesma forma em todas as plataformas.
+
+<Admonition type="tip" title="Importância do De/Para">
+Preencha os campos de integração apenas se sua instituição estiver conectada com sistemas externos. Caso contrário, mantenha-os em branco.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações de uso">
+- Crie categorias padronizadas para facilitar filtros e relatórios.
+- Não duplique nomes semelhantes (ex: "Alimentos" e "ALIMENTAR") sem real necessidade.
+- Atualize os mapeamentos De/Para sempre que houver alterações nos sistemas integrados.
+</Admonition>
+

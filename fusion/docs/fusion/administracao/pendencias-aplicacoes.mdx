@@ -1,0 +1,45 @@
+---
+sidebar_position: 18
+---
+
+import Admonition from '@theme/Admonition';
+import { AlertTriangle, ListTodo, Wrench, RouteOff } from 'lucide-react'; // Ícones ilustrativos
+
+# Pendências de Aplicações
+
+Para assegurar a consistência dos dados e a fluidez dos processos, o Fusion disponibiliza uma área para o gerenciamento de "Pendências de Aplicações". Esta seção é dedicada à identificação e análise de itens ou transações que não foram concluídos com sucesso por processos automatizados das aplicações, especialmente aqueles envolvendo integrações.
+
+<Admonition type="info" title="O Que São Pendências de Aplicações?" icon={<AlertTriangle />}>
+  <p>
+    No contexto do Fusion, "Pendências de Aplicações" refere-se a uma "lista de pontos a serem analisados, que não ocorreram na integração automática". Essas pendências podem surgir quando processos automatizados dentro das aplicações – que frequentemente dependem de integrações com outros módulos ou sistemas externos – encontram erros ou não conseguem ser finalizados como esperado.
+  </p>
+</Admonition>
+
+## Análise e Resolução de Pendências
+
+A tela de Pendências de Aplicações tem como objetivo centralizar esses itens problemáticos, permitindo que os usuários responsáveis investiguem as causas e implementem as soluções necessárias. A gestão eficaz dessas pendências é crucial para:
+
+* **Integridade dos Dados:** Garantir que os dados processados pelas aplicações estejam corretos e completos.
+* **Continuidade dos Processos:** Assegurar que os fluxos de trabalho dependentes dessas aplicações possam prosseguir sem interrupções indevidas.
+* **Confiabilidade do Sistema:** Manter a confiança dos usuários na capacidade das aplicações de executar suas tarefas corretamente.
+
+A imagem abaixo ilustra a interface que apresenta a lista de pendências, possivelmente com opções de filtro para facilitar a análise:
+
+<img src="/doc/img/18_filtro_de_pendencias.png" alt="Tela de Filtro de Pendências de Aplicações no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para visualização e filtragem de pendências que afetam as aplicações.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Diagnóstico e Ação Corretiva" icon={<Wrench />}>
+  <p>
+    A análise das pendências geralmente envolve identificar a origem do problema (ex: dados de entrada inválidos, falha de comunicação com outro sistema, erro de lógica na aplicação). Uma vez diagnosticada a causa, podem ser tomadas ações corretivas, que podem incluir o reprocessamento manual do item, a correção dos dados de origem ou ajustes na configuração da aplicação ou da integração.
+  </p>
+</Admonition>
+
+<Admonition type="warning" title="Impacto das Falhas em Processos Automatizados" icon={<RouteOff />}>
+  <p>
+    Falhas em processos automatizados, especialmente em integrações, podem ter um efeito cascata, impactando múltiplas funcionalidades e a experiência do usuário. O monitoramento e a resolução ágil das pendências listadas nesta seção são, portanto, essenciais para a manutenção da qualidade operacional do sistema Fusion.
+  </p>
+</Admonition>
+
+A gestão de "Pendências de Aplicações" no Fusion é uma ferramenta vital para manter a saúde dos processos automatizados do sistema, garantindo que as falhas sejam identificadas e tratadas para não comprometer a integridade dos dados e a eficiência das operações.

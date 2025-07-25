@@ -1,0 +1,65 @@
+---
+sidebar_position: 46
+title: Localidades
+---
+
+import Admonition from '@theme/Admonition';
+
+# Localidades
+
+O módulo **Localidades** é utilizado para cadastrar diferentes locais ou regiões, que podem ser tanto áreas físicas do hospital quanto locais anatômicos (ex: "Partes Inferiores"). Este cadastro é utilizado em outras partes do sistema, como no registro de procedimentos ou diagnósticos, para especificar onde uma ação ocorreu ou a que área um achado se refere.
+
+---
+
+## Acessando o Cadastro de Localidades
+
+1.  No menu lateral, localize e clique na opção **Localidades**.
+
+Você será direcionado para a tela "Listagem de Localidades", que exibe todas as localidades cadastradas.
+
+-   **Filtro de Listagem de Localidades**:
+    -   **Id**: Permite buscar pelo identificador único da localidade.
+    -   **Nome**: Permite buscar pelo nome da localidade.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da localidade.
+    -   **Nome**: Nome da localidade (ex: Partes Inferiores).
+    -   Cada localidade listada possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Localidades](/img/lista_localidades.png)
+
+---
+
+## Criando ou Editando uma Localidade
+
+Para **adicionar** uma nova localidade, clique no botão **+ Nova Localidade** localizado no canto superior direito da tela de listagem.
+Para **editar** uma localidade existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção de Localidade" permite configurar o nome da localidade e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro da Localidade">
+-   **Id**: Identificador único da localidade no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da localidade (ex: Partes Inferiores).
+-   **De/Paras**: Seção utilizada para mapear a localidade com códigos correspondentes em sistemas e integrações externas.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado.
+    -   Exemplos de campos de integração incluem:
+        -   Amigo App
+        -   Api HMED
+        -   Defensoria Pública Estado do Pará
+        -   Instituição de teste 2
+        -   Integrador DF
+        -   Integração Consulfarma
+</Admonition>
+
+![Edição de Localidade](/img/edit_localidades.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Localidades">
+-   **Defina o Escopo**: Determine se as localidades serão usadas para locais anatômicos, geográficos, ou setores do hospital, e mantenha a consistência no cadastro.
+-   **Use Padrões Anatômicos**: Se estiver cadastrando locais anatômicos, use terminologia padrão para garantir clareza e precisão nos registros clínicos.
+-   **Mapeamento para Integração**: O correto mapeamento na seção "De/Paras" é fundamental se a informação de localidade precisa ser enviada ou recebida de outros sistemas (ex: um sistema de laudos de imagem).
+-   **Evite Redundância**: Antes de criar uma nova localidade, verifique se uma equivalente já não existe no sistema.
+</Admonition>

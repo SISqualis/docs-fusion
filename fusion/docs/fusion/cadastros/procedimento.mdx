@@ -1,0 +1,63 @@
+---
+sidebar_position: 48
+title: Procedimento
+---
+
+import Admonition from '@theme/Admonition';
+
+# Procedimento
+
+O módulo **Procedimento** é um dos cadastros centrais do sistema Fusion, utilizado para registrar todos os procedimentos, exames e serviços realizados pela instituição. Isso pode incluir desde exames de imagem, como "RADIOGRAFIA DE TORAX", a exames laboratoriais, como "GLICOSE", e atendimentos, como "ATENDIMENTO DE URGENCIA". Este cadastro é a base para solicitações, agendamentos, registros clínicos e faturamento.
+
+---
+
+## Acessando o Cadastro de Procedimentos
+
+1.  No menu lateral, localize e clique na opção **Procedimento**.
+
+Você será direcionado para a tela "Listagem de Procedimentos", que exibe todos os procedimentos cadastrados.
+
+-   **Filtro de Procedimento**:
+    -   **Id**: Permite buscar pelo identificador único do procedimento.
+    -   **Nome**: Permite buscar pelo nome do procedimento.
+    -   **Categoria do Procedimento**: Permite filtrar por categorias, como "DIAGNÓSTICO EM LABORATÓRIO CLÍNICO".
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do procedimento.
+    -   **Nome**: Nome do procedimento.
+    -   **Categoria do Procedimento**: Categoria na qual o procedimento se enquadra.
+    -   Cada procedimento listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Procedimentos](/img/lista_procedimento.png)
+
+---
+
+## Criando ou Editando um Procedimento
+
+Para **adicionar** um novo procedimento, clique no botão **+ Novo Procedimento** localizado no canto superior direito da tela de listagem.
+Para **editar** um procedimento existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Procedimento" permite configurar todos os detalhes e mapeamentos do procedimento:
+
+<Admonition type="info" title="Campos de Cadastro do Procedimento">
+-   **Id**: Identificador único do procedimento no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome do procedimento (ex: RADIOGRAFIA DE TORAX).
+-   **Categoria do Procedimento**: Campo de seleção para associar o procedimento a uma categoria (ex: DIAGNOSTICO EM LABORATORIO CLINICO).
+-   **Abas de Configuração**:
+    -   **Composição**: Permite detalhar o procedimento, associando-o a integrações, códigos específicos, localidades e lateralidades. É possível adicionar múltiplas composições clicando no botão verde "+".
+    -   **Códigos Tabela**: (Inferido) Permite mapear o procedimento com códigos de tabelas internas do sistema.
+    -   **Códigos de De/Para**: (Inferido) Permite mapear o procedimento com códigos de sistemas externos para interoperabilidade, similar a outros cadastros.
+
+</Admonition>
+
+![Edição de Procedimento](/img/edit_procedimento.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Procedimentos">
+-   **Use Tabelas Padrão**: Sempre que possível, baseie os nomes e códigos dos procedimentos em tabelas padrão do setor, como TUSS (Terminologia Unificada da Saúde Suplementar) ou CBHPM (Classificação Brasileira Hierarquizada de Procedimentos Médicos), para garantir a padronização e facilitar o faturamento.
+-   **Categorização**: Utilize o campo "Categoria do Procedimento" de forma consistente para organizar os procedimentos e facilitar buscas e relatórios.
+-   **Aba Composição**: A aba "Composição" é poderosa. Use-a para definir variações de um mesmo procedimento (ex: com ou sem contraste) ou para agrupar múltiplos sub-procedimentos sob um único código principal.
+-   **Mapeamento Completo**: Preencha os mapeamentos nas abas "Códigos Tabela" e "Códigos de De/Para" com atenção, pois eles são cruciais para o funcionamento de integrações com laboratórios, sistemas de imagem (RIS/PACS) e sistemas de faturamento.
+</Admonition>

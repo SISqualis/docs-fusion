@@ -1,0 +1,67 @@
+---
+sidebar_position: 40
+title: Severidade de Alergia
+---
+
+import Admonition from '@theme/Admonition';
+
+# Severidade de Alergia
+
+O módulo **Severidade de Alergia** no sistema Fusion destina-se ao cadastro e gerenciamento dos diferentes níveis de severidade que uma reação alérgica pode apresentar. Este cadastro é crucial para a correta classificação das alergias dos pacientes, auxiliando profissionais de saúde na tomada de decisões clínicas e garantindo a segurança do paciente. A padronização e o mapeamento para integrações asseguram a consistência da informação entre sistemas.
+
+---
+
+## Acessando o Cadastro de Severidade de Alergia
+
+1.  No menu lateral, localize e clique na opção **Severidade de Alergias**.
+
+Você será direcionado para a tela "Listagem de Severidade de Alergias", que exibe os níveis de severidade já cadastrados e permite a filtragem para facilitar a busca:
+
+-   **Filtro de Severidade Alergia**:
+    -   **Id**: Permite buscar pelo identificador único do nível de severidade.
+    -   **Nome**: Permite buscar pela descrição do nível de severidade.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do nível de severidade.
+    -   **Nome**: Descrição do nível de severidade da alergia (ex: GRAVE, DESCONHECIDA, LEVE, MODERADA).
+    -   Cada nível listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Severidade de Alergias](/img/lista_sev_alergia.png)
+
+---
+
+## Criando ou Editando um Nível de Severidade de Alergia
+
+Para **adicionar** um novo nível de severidade de alergia, clique no botão **+ Nova Severidade de Alergia** localizado no canto superior direito da tela de listagem.
+Para **editar** um nível de severidade existente, utilize o botão **Editar** ao lado do nível desejado na listagem.
+
+A tela de "Manutenção Severidade de Alergia" permite configurar os detalhes do nível de severidade e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro da Severidade de Alergia">
+-   **Id**: Identificador único do nível de severidade no sistema Fusion (geralmente não editável ou preenchido automaticamente).
+-   **Nome\***: Campo obrigatório para a descrição do nível de severidade (ex: GRAVE).
+-   **Códigos de De/Para**: Seção utilizada para mapear o nível de severidade com códigos correspondentes em sistemas externos integrados.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código do nível de severidade no respectivo sistema integrado (ex: G para Integração MV).
+    -   Campos específicos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+        -   Outra integração
+</Admonition>
+
+![Edição de Severidade de Alergia](/img/edit_sev_alergia.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Severidade de Alergia">
+-   **Use Terminologia Padrão**: Utilize termos padronizados e clinicamente reconhecidos para os níveis de severidade (ex: Leve, Moderada, Grave/Severa).
+-   **Definições Claras**: Se possível, associe cada nível de severidade a critérios ou definições claras para garantir o uso consistente por todos os profissionais.
+-   **Mapeamento para Integração**: A precisão nos "Códigos de De/Para" é vital para sistemas de alerta de alergia e para a comunicação correta entre diferentes plataformas de saúde.
+-   **Mantenha Atualizado**: Revise os níveis de severidade cadastrados para assegurar que estão alinhados com as práticas clínicas atuais e padrões de mercado.
+-   **Consistência**: Garanta que os níveis de severidade sejam usados de forma consistente em todo o registro de alergias do paciente.
+</Admonition>

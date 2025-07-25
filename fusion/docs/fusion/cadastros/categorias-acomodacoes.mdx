@@ -1,0 +1,60 @@
+---
+sidebar_position: 4
+title: Categorias de Procedimento
+---
+
+import Admonition from '@theme/Admonition';
+
+# Categorias de Procedimento
+
+O módulo de **Categorias de Procedimento** organiza os tipos de procedimentos médicos e assistenciais dentro do sistema Fusion. Essa categorização é fundamental para gestão clínica, faturamento e interoperabilidade com outros sistemas.
+
+---
+
+## Acessando o Módulo
+
+1. No menu lateral, clique em **Cadastros**.
+2. Em seguida, selecione **Categorias Procedimento**.
+
+A tela exibirá uma lista com todas as categorias cadastradas, mostrando as colunas:
+
+- **Id**: Identificador único da categoria.
+- **Nome**: Descritivo da categoria.
+- **Grupo Categoria**: Classificação geral (ex: Diagnóstico, Geral).
+
+![Tela de Listagem de Categorias de Procedimento](/img/lista_cat_procedimento.png)
+
+---
+
+## Adicionando ou Editando Categorias
+
+Clique em **+ Nova Categoria Procedimento** ou em **Editar** para acessar a tela de manutenção.
+
+<Admonition type="info" title="Campos disponíveis">
+- **Nome**: Descrição da categoria.
+- **Grupo Categoria**: Selecione a qual grupo principal pertence.
+- **Códigos de De/Para**: Campos para mapeamento com sistemas externos de integração (ex: MV, Tasy, HMED, etc.).
+</Admonition>
+
+![Tela de Manutenção de Categoria de Procedimento](/img/edit_cat_procedimento.png)
+
+---
+
+## Sobre os Códigos de Integração
+
+O campo **De/Para** permite que a categoria seja corretamente interpretada por sistemas externos utilizados pela instituição. Isso evita conflitos na troca de dados via HL7, FHIR, APIs ou outros formatos de interoperabilidade.
+
+<Admonition type="tip" title="Dica técnica">
+Antes de preencher os campos de código, verifique com o time de integração os padrões utilizados por cada sistema parceiro.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações para gestão">
+- Padronize os nomes das categorias para facilitar filtros e relatórios.
+- Agrupe corretamente cada categoria em seu grupo correspondente (ex: Diagnóstico, Terapia, Cirúrgico).
+- Revise periodicamente os códigos De/Para para manter compatibilidade com sistemas externos.
+</Admonition>
+

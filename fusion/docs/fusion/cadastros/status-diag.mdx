@@ -1,0 +1,48 @@
+---
+sidebar_position: 21
+title: Status de Diagnóstico
+---
+
+import Admonition from '@theme/Admonition';
+
+# Status de Diagnóstico
+
+O módulo **Status de Diagnóstico** permite classificar o estágio ou situação de um diagnóstico dentro do prontuário do paciente. Ele auxilia no acompanhamento clínico, na geração de relatórios e na interoperabilidade com outros sistemas.
+
+---
+
+## Acessando o Cadastro
+
+1. No menu lateral, clique em **Cadastros**.
+2. Selecione a opção **Status de Diagnóstico**.
+
+A listagem exibe os status já cadastrados, com os campos:
+
+- **Id**: Identificador único.
+- **Nome**: Situação do diagnóstico (ex: ATIVO, INATIVO, RESOLVIDO).
+
+![Listagem de Status de Diagnóstico](/img/lista_stt_diag.png)
+
+---
+
+## Criando ou Editando um Status
+
+Para **adicionar** um novo status, clique em **+ Novo Status de Diagnóstico**.  
+Para **editar**, clique no botão **Editar** ao lado do item desejado.
+
+<Admonition type="info" title="Campos de Cadastro">
+- **Nome**: Nome que representa o status do diagnóstico.
+- **Códigos de De/Para**: Mapeamentos utilizados para integração com sistemas como MV, Tasy, HMED, etc.
+</Admonition>
+
+![Edição de Status de Diagnóstico](/img/edit_stt_diag.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas">
+- Utilize status claros e padronizados, como “ATIVO”, “INATIVO” e “RESOLVIDO”.
+- Mantenha os códigos de integração atualizados conforme os sistemas utilizados.
+- Evite criar status duplicados com pequenas variações de grafia.
+</Admonition>

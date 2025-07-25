@@ -1,0 +1,60 @@
+---
+sidebar_position: 4
+title: Coordenadorias
+---
+
+import Admonition from '@theme/Admonition';
+
+# Coordenadorias
+
+O módulo **Coordenadorias**, localizado na seção **Contábil**, é utilizado para cadastrar os diferentes setores, departamentos ou centros de custo da instituição. Este cadastro é essencial para a organização interna e para a alocação de recursos e despesas nos processos de prestação de contas e em outras rotinas financeiras.
+
+---
+
+## Acessando o Cadastro de Coordenadorias
+
+1.  No menu lateral, clique em **Contábil**.
+2.  Em seguida, acesse a opção **Coordenadorias**.
+
+Você será direcionado para a tela "Listagem de Coordenadorias", que exibe todos os departamentos ou setores cadastrados.
+
+-   **Filtro de Coordenadorias**:
+    -   **Id**: Permite buscar pelo identificador único da coordenadoria.
+    -   **Nome**: Permite buscar pelo nome da coordenadoria.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da coordenadoria.
+    -   **Nome**: Nome do setor ou departamento (ex: Teste Coordenadoria 1).
+    -   Cada item listado possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Coordenadorias](/img/lista_coord.png)
+
+---
+
+## Criando ou Editando uma Coordenadoria
+
+Para **adicionar** uma nova coordenadoria, clique no botão **+ Nova Coordenadoria** localizado no canto superior direito.
+Para **editar** uma coordenadoria existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Coordenadoria" permite configurar o nome da coordenadoria e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro da Coordenadoria">
+-   **Id**: Identificador único da coordenadoria no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome do setor ou departamento.
+-   **Códigos de De/Para**: Seção para mapear a coordenadoria com códigos correspondentes em sistemas externos, como sistemas de ERP ou outros módulos financeiros.
+    -   **Integração**: Nome do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado (ex: 7 para Integração MV, 7 para Api HMED).
+    -   Os campos podem incluir integrações com sistemas como MV, Tasy, HMED, entre outros.
+
+</Admonition>
+
+![Edição de Coordenadoria](/img/edit_coord.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Coordenadorias">
+-   **Estrutura Organizacional**: Utilize este cadastro para espelhar a estrutura de centros de custo ou o organograma da sua instituição.
+-   **Mapeamento para ERP**: A correta configuração dos "Códigos de De/Para" é fundamental para a integração com o sistema de gestão empresarial (ERP) da instituição, garantindo que as despesas e receitas sejam alocadas corretamente.
+-   **Nomenclatura Clara**: Use nomes que identifiquem claramente o setor ou departamento para evitar ambiguidades na hora de selecionar a coordenadoria nos processos de prestação de contas.
+</Admonition>   

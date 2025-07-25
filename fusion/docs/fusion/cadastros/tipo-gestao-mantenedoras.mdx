@@ -1,0 +1,62 @@
+---
+sidebar_position: 59
+title: Tipo de Gestão de Mantenedoras
+---
+
+import Admonition from '@theme/Admonition';
+
+# Tipo de Gestão de Mantenedoras
+
+O módulo **Tipo de Gestão de Mantenedoras** é utilizado para cadastrar as diferentes classificações ou naturezas jurídicas das entidades mantenedoras, como "Pública", "Privada", "Filantrópica", etc. Este cadastro serve para categorizar as mantenedoras registradas no módulo anterior, facilitando a geração de relatórios, filtros e a aplicação de regras específicas para cada tipo de gestão.
+
+---
+
+## Acessando o Cadastro de Tipo de Gestão de Mantenedoras
+
+1.  No menu lateral, localize e clique na opção **Tipo Gestão Mantenedoras**.
+
+Você será direcionado para a tela "Listagem de Tipos de Gestão de Mantenedoras", que exibe todas as classificações cadastradas.
+
+-   **Filtro de Tipo de Gestão de Mantenedora**:
+    -   **Id**: Permite buscar pelo identificador único do tipo de gestão.
+    -   **Nome**: Permite buscar pelo nome do tipo de gestão.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do tipo.
+    -   **Nome**: Nome do tipo de gestão da mantenedora (ex: Teste Tipo de Gestão).
+    -   Cada tipo listado possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Tipos de Gestão de Mantenedoras](/img/lista_mnt_g.png)
+
+---
+
+## Criando ou Editando um Tipo de Gestão de Mantenedora
+
+Para **adicionar** um novo tipo de gestão, clique no botão **+ Novo Tipo de Gestão de Mantenedora** localizado no canto superior direito da tela de listagem.
+Para **editar** um tipo de gestão existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Tipo de Gestão de Mantenedoras" permite configurar o nome do tipo e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro do Tipo de Gestão">
+-   **Id**: Identificador único do tipo de gestão no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome do tipo de gestão (ex: Teste Tipo de Gestão).
+-   **Códigos de De/Para**: Seção para mapear o tipo de gestão com códigos correspondentes em sistemas externos. A sub-seção pode ter colunas como "Integrações" e "Aplicações".
+    -   **Integrador DF**: Campo para código de integração específico.
+    -   **Integração MV**: Campo para código de integração com o sistema MV (ex: 222).
+    -   **Integração MV com o HOSPITAL MODELO**: Campo para código de integração específico.
+    -   **Integração MV sem SENDING APPLICATION**: Campo para código de integração específico.
+    -   **Integração Tasy**: Campo para código de integração com o sistema Tasy.
+
+</Admonition>
+
+![Edição de Tipo de Gestão de Mantenedora](/img/edit_mnt_g.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Tipos de Gestão">
+-   **Relação com Mantenedoras**: Este cadastro é uma classificação para o módulo "Mantenedoras". Garanta que os tipos criados aqui sejam relevantes para categorizar as entidades mantenedoras da sua rede.
+-   **Clareza e Padronização**: Utilize nomes claros e padronizados que reflitam a natureza jurídica ou administrativa das mantenedoras.
+-   **Mapeamento para Relatórios**: O mapeamento de "Códigos de De/Para" pode ser importante para sistemas de BI (Business Intelligence) ou outros sistemas de gestão que necessitam dessa classificação para consolidar dados.
+-   **Simplifique**: Crie apenas os tipos de gestão que são necessários para a sua operação, evitando excesso de categorias que podem levar a erros de classificação.
+</Admonition>

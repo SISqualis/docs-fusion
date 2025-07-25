@@ -1,0 +1,68 @@
+---
+sidebar_position: 44
+title: Detalhes de Recursos
+---
+
+import Admonition from '@theme/Admonition';
+
+# Detalhes de Recursos
+
+O módulo **Detalhes de Recursos** é utilizado para cadastrar os valores ou opções específicas para cada categoria definida em **Tipos de Detalhes de Recursos**. Por exemplo, para o tipo "Anestesia", os detalhes poderiam ser "Com Sedação" e "Sem Sedação". Este cadastro permite criar um sistema de características e valores que podem ser associados aos recursos principais, oferecendo grande flexibilidade na parametrização do sistema.
+
+---
+
+## Acessando o Cadastro de Detalhes de Recursos
+
+1.  No menu lateral, localize e clique na opção **Detalhes de Recursos**.
+
+Você será direcionado para a tela "Detalhes de Recursos", que lista os valores detalhados já cadastrados para os diferentes tipos de recursos.
+
+-   **Filtro de Detalhes de Recursos**:
+    -   **Id**: Permite buscar pelo identificador único do detalhe.
+    -   **Tipo**: Permite filtrar pela categoria do detalhe (ex: Anestesia).
+    -   **Nome**: Permite buscar pelo nome/valor do detalhe (ex: COM SEDAÇÃO).
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do detalhe.
+    -   **Tipo**: Categoria à qual o detalhe pertence.
+    -   **Nome**: Descrição ou valor do detalhe.
+    -   Cada detalhe listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Detalhes de Recursos](/img/lista_rec.png)
+
+---
+
+## Criando ou Editando um Detalhe de Recurso
+
+Para **adicionar** um novo detalhe, clique no botão **+ Novo Detalhe** localizado no canto superior direito da tela de listagem.
+Para **editar** um detalhe existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção de Detalhe de Recurso" permite configurar o valor específico do detalhe, associá-lo a um tipo e definir seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro do Detalhe de Recurso">
+-   **Id**: Identificador único do detalhe no sistema Fusion (ex: 1).
+-   **Tipo**: Campo de seleção obrigatório para associar este detalhe a uma categoria previamente cadastrada em "Tipos de Detalhes de Recursos" (ex: Anestesia).
+-   **Nome\***: Campo obrigatório para o nome ou valor do detalhe (ex: COM SEDAÇÃO).
+-   **De/Paras**: Seção utilizada para mapear o detalhe de recurso com códigos correspondentes em sistemas e integrações externas.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado.
+    -   Exemplos de campos de integração incluem:
+        -   Amigo App
+        -   Api HMED
+        -   Defensoria Pública Estado do Pará
+        -   Instituição de teste 2
+        -   Integrador DF
+        -   Integração Consulfarma
+</Admonition>
+
+![Edição de Detalhe de Recurso](/img/edit_rec.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Detalhes de Recursos">
+-   **Relação Tipo vs. Detalhe**: Entenda que este módulo depende do "Tipos de Detalhes de Recursos". Primeiro, crie a categoria (Tipo), depois crie as opções (Detalhes) para ela aqui.
+-   **Consistência**: Mantenha os nomes dos detalhes consistentes dentro de um mesmo tipo. Por exemplo, se usar "Com Sedação", evite criar outro chamado "COM SEDAÇÃO" em maiúsculas para o mesmo tipo.
+-   **Mapeamento Específico**: Os códigos de integração aqui são para o valor específico ("Com Sedação"), não para a categoria geral ("Anestesia"). Seja preciso no mapeamento.
+-   **Revisão Conjunta**: Ao revisar os cadastros, é útil olhar para "Tipos" e "Detalhes" em conjunto para garantir que a estrutura de classificação de recursos faz sentido como um todo.
+</Admonition>

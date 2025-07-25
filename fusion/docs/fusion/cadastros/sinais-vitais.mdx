@@ -1,0 +1,65 @@
+---
+sidebar_position: 52
+title: Sinais Vitais
+---
+
+import Admonition from '@theme/Admonition';
+
+# Sinais Vitais
+
+O módulo **Sinais Vitais** no sistema Fusion é utilizado para cadastrar todos os tipos de sinais vitais e medidas antropométricas que podem ser registrados para um paciente. Exemplos incluem "Pressão Sistólica", "Frequência Cardíaca", "Temperatura", "Peso" e "Altura". Este cadastro é fundamental para a criação de formulários de evolução, monitoramento de pacientes e para garantir que os dados coletados sejam padronizados e corretamente integrados com outros sistemas.
+
+---
+
+## Acessando o Cadastro de Sinais Vitais
+
+1.  No menu lateral, localize e clique na opção **Sinais Vitais**.
+
+Você será direcionado para a tela "Listagem de Sinais Vitais", que exibe todos os sinais vitais já cadastrados.
+
+-   **Filtro de Sinais Vitais**:
+    -   **Id**: Permite buscar pelo identificador único do sinal vital.
+    -   **Nome**: Permite buscar pelo nome do sinal vital.
+    -   **Unidade Medida**: Permite filtrar pela unidade de medida.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único.
+    -   **Nome**: Nome do sinal vital (ex: Pressão Diastólica, Pulso, IMC).
+    -   **Unidade Medida**: Unidade de medida correspondente (ex: mmHg, bpm, kg/m<sup>2</sup>).
+    -   Cada item listado possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Sinais Vitais](/img/lista_vitais.png)
+
+---
+
+## Criando ou Editando um Sinal Vital
+
+Para **adicionar** um novo sinal vital, clique no botão **+ Novo Sinal Vital** localizado no canto superior direito da tela de listagem.
+Para **editar** um sinal vital existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Sinal Vital" permite configurar os detalhes do sinal vital, sua apresentação e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro do Sinal Vital">
+-   **Id**: Identificador único do sinal vital no sistema.
+-   **Nome\***: Campo obrigatório para o nome do sinal vital (ex: Pressão Sistólica).
+-   **Unidade de Medida**: Campo para a unidade de medida do sinal (ex: Hectograma).
+-   **Ícone**: Campo para definir um ícone visual associado ao sinal vital (ex: fas fa-file-medical-alt).
+-   **Ordem**: Campo numérico para definir a ordem de exibição do sinal vital em listas e formulários.
+-   **Códigos de De/Para**: Seção para mapear o sinal vital com códigos correspondentes em sistemas externos.
+    -   **Integração**: Nome do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado.
+    -   Os campos podem incluir integrações com sistemas como MV, Tasy, HMED, entre outros.
+
+</Admonition>
+
+![Edição de Sinal Vital](/img/edit_vitais.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Sinais Vitais">
+-   **Unidades de Medida**: Preencha corretamente e de forma padronizada as unidades de medida, pois isso é crucial para a correta interpretação dos valores registrados.
+-   **Ordenação e Ícones**: Utilize os campos "Ordem" e "Ícone" para melhorar a experiência do usuário, organizando os sinais vitais de forma lógica e visualmente intuitiva nos prontuários e formulários.
+-   **Padrões Clínicos**: Ao cadastrar novos sinais, verifique se eles seguem os padrões e terminologias clínicas adotadas pela instituição.
+-   **Mapeamento para Monitores**: Se houver integração com monitores multiparâmetros, o mapeamento correto dos "Códigos de De/Para" é essencial para a captura automática de dados.
+</Admonition>

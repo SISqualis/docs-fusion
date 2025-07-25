@@ -1,0 +1,69 @@
+---
+sidebar_position: 38
+title: Motivo de Óbito
+---
+
+import Admonition from '@theme/Admonition';
+
+# Motivo de Óbito
+
+O módulo **Motivo de Óbito** no sistema Fusion é dedicado ao cadastro e gerenciamento das causas de óbito. Este cadastro é essencial para registros oficiais, estatísticas vitais, e para a correta documentação clínica e legal. A padronização e o mapeamento para integrações garantem a consistência da informação entre diferentes sistemas.
+
+---
+
+## Acessando o Cadastro de Motivo de Óbito
+
+1.  No menu lateral, localize e clique na opção **Motivo de Óbito**.
+
+Você será direcionado para a tela "Listagem de Motivos de Óbito", que exibe os motivos já cadastrados e oferece filtros para busca:
+
+-   **Filtro de Motivos de Óbito**:
+    -   **Id**: Permite buscar pelo identificador único do motivo de óbito.
+    -   **Nome**: Permite buscar pela descrição do motivo de óbito.
+    -   **Doença**: Permite filtrar os motivos de óbito associados a uma doença específica (provavelmente via CID).
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do motivo de óbito.
+    -   **Nome**: Descrição do motivo do óbito (ex: CHOQUE NÃO ESPECIFICADO, DOENÇA CARDIOVASCULAR ATEROSCLERÓTICA...).
+    -   **Doenças**: Campo para associar o motivo a uma doença específica (pode estar vazio se não aplicável ou não preenchido).
+    -   Cada motivo listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Motivos de Óbito](/img/lista_obito.png)
+
+---
+
+## Criando ou Editando um Motivo de Óbito
+
+Para **adicionar** um novo motivo de óbito, clique no botão **+ Novo Motivo de Óbito** localizado no canto superior direito da tela de listagem.
+Para **editar** um motivo de óbito existente, utilize o botão **Editar** ao lado do motivo desejado na listagem.
+
+A tela de "Manutenção Motivo de Óbito" permite configurar os detalhes do motivo e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro do Motivo de Óbito">
+-   **Id**: Identificador único do motivo de óbito no sistema Fusion (geralmente não editável ou preenchido automaticamente).
+-   **Nome\***: Campo obrigatório para a descrição do motivo do óbito (ex: CHOQUE NÃO ESPECIFICADO).
+-   **Doença**: Campo de seleção para associar o motivo de óbito a uma doença específica, geralmente utilizando códigos da Classificação Internacional de Doenças (CID).
+-   **Códigos de De/Para**: Seção utilizada para mapear o motivo de óbito com códigos correspondentes em sistemas externos integrados, como sistemas de vigilância epidemiológica ou outros sistemas hospitalares.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código do motivo de óbito no respectivo sistema integrado (ex: R579 para Integração MV).
+    -   Campos específicos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+</Admonition>
+
+![Edição de Motivo de Óbito](/img/edit_obito.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Motivos de Óbito">
+-   **Padronização CID**: Sempre que possível, utilize as descrições e códigos conforme a Classificação Internacional de Doenças (CID) vigente para garantir a padronização e comparabilidade dos dados.
+-   **Precisão na Descrição**: As descrições devem ser claras e precisas, refletindo corretamente a causa do óbito conforme laudo médico.
+-   **Mapeamento para Integração**: Mantenha os "Códigos de De/Para" corretos e atualizados, especialmente para sistemas que enviam informações para órgãos oficiais de saúde.
+-   **Associação com Doença**: Preencha o campo "Doença" corretamente para permitir análises epidemiológicas e estatísticas mais detalhadas.
+-   **Confidencialidade**: Informações sobre motivo de óbito são sensíveis. Garanta que o acesso a este módulo seja restrito a usuários autorizados.
+</Admonition>

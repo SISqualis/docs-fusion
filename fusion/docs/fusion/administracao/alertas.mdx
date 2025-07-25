@@ -1,0 +1,46 @@
+---
+sidebar_position: 12
+---
+
+import Admonition from '@theme/Admonition';
+import { AlertCircle, Settings2, BellRing, List } from 'lucide-react'; // Ícones ilustrativos
+
+# Alertas
+
+O monitoramento proativo de eventos e condições críticas é essencial em ambientes dinâmicos como o da saúde. O Fusion oferece uma funcionalidade para a "Indicação de alertas parametrizados no sistema", permitindo que os usuários sejam notificados sobre situações importantes que requerem atenção ou acompanhamento.
+
+<Admonition type="info" title="O Que São Alertas Parametrizados?" icon={<AlertCircle />}>
+  <p>
+    Alertas parametrizados são notificações configuradas para serem disparadas automaticamente quando certas condições ou regras predefinidas são atendidas dentro do sistema. Essas condições podem estar relacionadas a dados clínicos de pacientes (ex: resultados críticos de exames), eventos operacionais (ex: falhas em integrações) ou outros indicadores de desempenho e segurança. A tela de "Alertas" serve como um painel para visualizar essas indicações.
+  </p>
+</Admonition>
+
+## A Importância dos Alertas no Sistema
+
+A visualização centralizada de alertas parametrizados oferece diversos benefícios:
+
+* **Monitoramento Proativo:** Permite que a equipe identifique e responda rapidamente a situações críticas ou anormais, antes que se tornem problemas maiores.
+* **Suporte à Decisão Clínica:** Alertas podem notificar profissionais sobre interações medicamentosas perigosas, alergias relevantes, ou alterações significativas no estado de um paciente.
+* **Eficiência Operacional:** Pode sinalizar gargalos, falhas em processos automatizados ou necessidade de manutenção em algum componente do sistema.
+* **Segurança do Paciente:** Contribui diretamente para a segurança ao destacar informações que podem impactar o cuidado e o bem-estar dos pacientes.
+
+A imagem abaixo ilustra a interface onde a lista de alertas parametrizados é exibida no Fusion:
+
+<img src="/doc/img/12_lista_alerta.png" alt="Tela de Lista de Alertas Parametrizados no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface exibindo a indicação de alertas parametrizados no sistema.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Configuração dos Parâmetros" icon={<Settings2 />}>
+  <p>
+    Embora esta tela exiba os alertas, a "parametrização" em si – ou seja, a definição das regras, condições e limiares que disparam cada alerta – é geralmente realizada em outra seção de configuração do sistema. A eficácia dos alertas depende diretamente da qualidade e relevância desses parâmetros.
+  </p>
+</Admonition>
+
+<Admonition type="note" title="Ação e Acompanhamento" icon={<BellRing />}>
+  <p>
+    A simples visualização de um alerta é apenas o primeiro passo. É crucial que existam processos definidos para a análise, o encaminhamento e a resolução das situações indicadas pelos alertas, garantindo que as notificações se traduzam em ações efetivas.
+  </p>
+</Admonition>
+
+A funcionalidade de indicação de alertas parametrizados no Fusion é uma ferramenta poderosa para manter os usuários informados sobre eventos significativos, promovendo uma gestão mais ágil, segura e eficiente dos processos de saúde.

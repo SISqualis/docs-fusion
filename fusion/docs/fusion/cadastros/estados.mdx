@@ -1,0 +1,67 @@
+---
+sidebar_position: 6
+title: Estados
+---
+
+import Admonition from '@theme/Admonition';
+
+# Cadastro de Estados
+
+O módulo de **Estados** do Fusion permite o gerenciamento das unidades federativas associadas a cada país previamente cadastrado. Ele é essencial para garantir a consistência em cadastros de pacientes, endereços e integrações.
+
+---
+
+## Acessando o Cadastro de Estados
+
+1. No menu lateral, clique em **Cadastros**.
+2. Em seguida, selecione a opção **Estados**.
+
+A tela exibirá uma listagem com as colunas:
+
+- **Id**: Identificador único.
+- **País**: País ao qual o estado pertence.
+- **Nome**: Nome do estado.
+- **Sigla**: Abreviação de duas letras (ex: RS, PE).
+
+![Tela de Listagem de Estados](/img/lista_estados.png)
+
+---
+
+## Criando ou Editando um Estado
+
+Clique em **+ Novo Estado** ou no botão **Editar** ao lado de um registro existente.
+
+<Admonition type="info" title="Campos do formulário de estado">
+- **Nome**: Nome completo do estado (ex: Rio Grande do Sul).
+- **Sigla**: Código de duas letras do estado.
+- **País**: Relacione o estado a um país já cadastrado.
+</Admonition>
+
+Além disso, é possível realizar o **mapeamento De/Para** com sistemas externos, garantindo integração com plataformas como MV, Tasy, Integrador DF, entre outros.
+
+![Tela de Manutenção de Estado](/img/edit_estados.png)
+
+---
+
+## Códigos de De/Para
+
+Os campos de mapeamento permitem configurar códigos específicos para:
+
+- Integrações com HOSPITAIS ou sistemas legados.
+- Compatibilidade com mensagens HL7 e APIs.
+- Identificação única em plataformas externas.
+
+<Admonition type="tip" title="Dica de integração">
+Preencha os campos de código somente após validar os valores com a equipe técnica dos sistemas parceiros.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações">
+- Verifique se o país correspondente está corretamente cadastrado.
+- Utilize siglas padronizadas (ex: SP, MG, RJ).
+- Revise os códigos de integração periodicamente.
+- Evite nomes genéricos como “Teste”.
+</Admonition>

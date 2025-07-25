@@ -1,0 +1,57 @@
+---
+sidebar_position: 3
+title: Acomodação
+---
+
+import Admonition from '@theme/Admonition';
+
+# Cadastro de Acomodação
+
+O módulo de **Acomodações** permite que o sistema Fusion registre os diferentes tipos de espaços disponíveis para o atendimento de pacientes, como enfermarias, quartos privativos ou setores específicos. Este cadastro também suporta integrações com outras plataformas hospitalares.
+
+---
+
+## Acessando o Menu de Acomodações
+
+1. No menu lateral, vá até **Cadastros**.
+2. Selecione **Acomodação**.
+
+Na tela inicial, você verá a lista com todas as acomodações cadastradas.
+
+![Tela de Listagem de Acomodações](/img/lista_acomodacoes.png)
+
+---
+
+## Adicionando ou Editando uma Acomodação
+
+Clique em **+ Nova Acomodação** ou no botão **Editar** ao lado de um item existente.
+
+<Admonition type="info" title="Campos disponíveis no formulário">
+- **Id**: Gerado automaticamente.
+- **Nome**: Nome da acomodação (ex: ENFERMARIA, PRIVATIVO STANDARD).
+- **Integrações**: Códigos correspondentes para que o nome da acomodação seja reconhecido em sistemas externos (De/Para).
+</Admonition>
+
+---
+
+## Integração De/Para
+
+No formulário de edição, há duas abas:
+- **Integrações**: Permite relacionar a acomodação a múltiplos sistemas (como MV, HMED, Consultafarma).
+- **Aplicações**: Pode conter outras opções de mapeamento interno ou externo (caso habilitado).
+
+![Tela de Manutenção de Acomodação](/img/edit_acomodacoes.png)
+
+<Admonition type="tip" title="Importância dos mapeamentos">
+Caso sua instituição utilize sistemas terceiros ou deseje interoperabilidade, o preenchimento correto dos códigos de integração evita falhas nas trocas de dados.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações de uso">
+- Mantenha os nomes padronizados e sem abreviações ambíguas.
+- Utilize a função de filtro para evitar duplicidades.
+- Revise os mapeamentos periodicamente com a equipe de TI.
+</Admonition>

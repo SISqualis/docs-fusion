@@ -1,0 +1,67 @@
+---
+sidebar_position: 37
+title: Modelo Assistencial
+---
+
+import Admonition from '@theme/Admonition';
+
+# Modelo Assistencial
+
+O módulo **Modelo Assistencial** no sistema Fusion permite o cadastro e a gestão dos diferentes modelos de assistência ou planos de cuidado que podem ser aplicados aos pacientes. Este cadastro é importante para classificar tipos de atendimento, definir protocolos e facilitar a integração com outros sistemas que utilizam essa categorização.
+
+---
+
+## Acessando o Cadastro de Modelo Assistencial
+
+1.  No menu lateral, navegue até a seção principal de cadastros (geralmente "Cadastros", como indicado pela posição do item no menu da interface).
+2.  Clique na opção **Modelo Assistencial**.
+
+Você será direcionado para a tela "Listagem de Modelo Assistenciais", que exibe os modelos já cadastrados e permite filtrar a busca:
+
+-   **Filtro de Modelo Assistencial**:
+    -   **Id**: Permite buscar pelo identificador único do modelo assistencial.
+    -   **Nome**: Permite buscar pelo nome do modelo assistencial.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do modelo assistencial.
+    -   **Nome**: Nome descritivo do modelo assistencial (ex: Modelo Assistencial Teste).
+    -   Cada modelo listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Modelo Assistenciais](/img/lista_mdl_ass.png)
+
+---
+
+## Criando ou Editando um Modelo Assistencial
+
+Para **adicionar** um novo modelo assistencial, clique no botão **+ Novo Modelo Assistencial** localizado no canto superior direito da tela de listagem.
+Para **editar** um modelo assistencial existente, utilize o botão **Editar** ao lado do modelo desejado na listagem.
+
+A tela de "Manutenção Modelo Assistencial" permite configurar os detalhes do modelo e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro do Modelo Assistencial">
+-   **Id**: Identificador único do modelo assistencial no sistema Fusion (geralmente não editável ou preenchido automaticamente).
+-   **Nome\***: Campo obrigatório para o nome descritivo do modelo assistencial (ex: Modelo Assistencial Teste).
+-   **Códigos de De/Para**: Esta seção é utilizada para mapear o modelo assistencial com códigos correspondentes em sistemas externos integrados. Isso é crucial para a interoperabilidade e a correta sincronização de dados entre o Fusion e outros sistemas.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código do modelo assistencial no respectivo sistema integrado.
+    -   Campos específicos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+</Admonition>
+
+![Edição de Modelo Assistencial](/img/edit_mdl_ass.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Modelos Assistenciais">
+-   **Nomenclatura Clara**: Utilize nomes que descrevam claramente a finalidade e o escopo de cada modelo assistencial.
+-   **Padronização**: Se a instituição utiliza modelos assistenciais padronizados ou baseados em diretrizes específicas, reflita essa padronização no cadastro.
+-   **Mapeamento de Integração**: A precisão nos "Códigos de De/Para" é essencial para que os sistemas integrados reconheçam e processem corretamente a informação do modelo assistencial. Mantenha-os atualizados.
+-   **Revisão Periódica**: Revise periodicamente os modelos assistenciais cadastrados para garantir que ainda são relevantes e estão alinhados com as práticas atuais da instituição.
+-   **Evite Duplicidade**: Antes de cadastrar um novo modelo, verifique se um similar já não existe para evitar redundâncias.
+</Admonition>

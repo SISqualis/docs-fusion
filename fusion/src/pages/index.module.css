@@ -1,0 +1,205 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+    padding: 6rem 0; /* Increased padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #254e70; /* A deep blue, adjust to your branding */
+    color: white;
+}
+
+.heroLogo {
+    max-width: 150px; /* Adjust as needed */
+    margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+    font-size: 1.5rem; /* Larger subtitle */
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 2rem; /* Added margin */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+}
+
+/* Optional: Style for an outline button if you add one */
+.outlineButton {
+    color: white !important;
+    border-color: white !important;
+}
+.outlineButton:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Introduction Section Styles */
+.introductionSection {
+    padding: 4rem 0;
+    background-color: #f9f9f9; /* Light gray background for this section */
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.sectionText {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify; /* Or left, depending on preference */
+    margin-bottom: 1.5rem;
+}
+.sectionText strong {
+    color: #005a9c; /* Highlight company name or key terms */
+}
+
+/* Features Section Styles */
+.featuresSection {
+    padding: 4rem 1rem; /* Added horizontal padding for smaller screens if container fluid */
+    background-color: #f0f4f8; /* NEW: Light bluish-gray background for better card contrast */
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.featureColumn {
+    margin-bottom: 2rem;
+    display: flex; /* Ensures columns stretch vertically together */
+    padding-left: 0.75rem; /* Gutter spacing for columns */
+    padding-right: 0.75rem; /* Gutter spacing for columns */
+}
+
+.featureBox {
+    background-color: #ffffff; /* Card background */
+    padding: 1.75rem; /* Adjusted padding */
+    border-radius: 12px; /* More rounded corners */
+    border: 1px solid #d8e2ef; /* Softer border color */
+    box-shadow: 0 4px 12px rgba(0, 30, 80, 0.08); /* Refined shadow */
+    text-align: left;
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out,
+        border-color 0.25s ease-out;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Takes full width of its column */
+    height: 100%; /* Crucial for making cards in a row same height */
+}
+
+.featureBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 30, 80, 0.12);
+    border-color: #007acc; /* Accent color border on hover */
+}
+
+.featureHeader {
+    display: flex;
+    align-items: center; /* Vertically align icon and title */
+    margin-bottom: 1.25rem; /* Space below header */
+}
+
+.featureIcon {
+    /* For component icons like PatientIcon */
+    font-size: 2.2rem; /* Slightly adjusted icon size */
+    margin-right: 0.875rem; /* Space between icon and title */
+    color: #007acc;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+.featureIconString {
+    /* For emojiIcon prop */
+    font-size: 2.2rem; /* Consistent size */
+    margin-right: 0.875rem;
+    line-height: 1; /* Helps with vertical alignment of emojis */
+    flex-shrink: 0;
+}
+
+.featureTitle {
+    font-size: 1.375rem; /* Slightly adjusted title size */
+    margin-bottom: 0;
+    color: #2c3e50;
+    font-weight: 600; /* Bolder title */
+}
+
+.featureDescription {
+    font-size: 0.95rem; /* Slightly smaller description for better fit */
+    line-height: 1.65;
+    color: #4a5568; /* Softer text color */
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.featureButton {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 0.6rem 1.2rem; /* Button padding */
+    font-size: 0.9rem; /* Button font size */
+}
+
+@media screen and (max-width: 996px) {
+    .heroBanner {
+        padding: 4rem 0;
+    }
+    .heroSubtitle {
+        font-size: 1.25rem;
+    }
+    /* On medium screens, features may stack if col col--6 is not enough space, or adjust column count.
+     If you want them to stay 2-column longer, you might need to adjust Docusaurus's column breakpoints or ensure enough width.
+     The 'col col--md-6' (if Docusaurus uses standard bootstrap-like naming) implies they stack on 'sm' screens.
+  */
+}
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        width: 100%; /* Make button group take width to center internal buttons */
+    }
+    .buttons > .button {
+        width: 80%; /* Control width of stacked buttons */
+        max-width: 320px; /* Max width for very wide small screens */
+        margin-bottom: 0.75rem;
+    }
+    .buttons > .button:last-child {
+        margin-bottom: 0;
+    }
+
+    .featureColumn {
+        /* col col--6 will typically stack to full width on smaller screens (like 'sm' or 'xs') */
+        /* If using Docusaurus's default col col--X, it might already handle this. */
+        /* Ensure padding on the section or container for stacked items */
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .featuresSection {
+        padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    }
+    .featureBox {
+        padding: 1.5rem; /* Adjust padding for smaller cards */
+    }
+    .featureTitle {
+        font-size: 1.25rem;
+    }
+    .featureDescription {
+        font-size: 0.9rem;
+    }
+}
+
+.botao-index::hover {
+    background-color: #005b9c00 !important; /* Accent color for primary button hover */
+    color: #2462a5 !important; /* Ensure text remains readable */
+    border: 1px solid #2462a5 !important; /* Accent color border on hover */
+}

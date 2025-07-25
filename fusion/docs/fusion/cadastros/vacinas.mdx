@@ -1,0 +1,61 @@
+---
+sidebar_position: 53
+title: Vacinas
+---
+
+import Admonition from '@theme/Admonition';
+
+# Vacinas
+
+O módulo **Vacinas** no sistema Fusion é utilizado para cadastrar todas as vacinas disponíveis para administração e registro no histórico do paciente. Este cadastro é essencial para o controle do calendário vacinal, campanhas de imunização e para a correta integração com sistemas de saúde governamentais, como o RNDS (Rede Nacional de Dados em Saúde).
+
+---
+
+## Acessando o Cadastro de Vacinas
+
+1.  No menu lateral, localize e clique na opção **Vacinas**.
+
+Você será direcionado para a tela "Listagem de Vacinas", que exibe todas as vacinas cadastradas no sistema.
+
+-   **Filtro de Vacina**:
+    -   **Id**: Permite buscar pelo identificador único da vacina.
+    -   **Nome**: Permite buscar pelo nome da vacina.
+    -   **Doença**: Permite filtrar vacinas pela doença que previnem.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da vacina.
+    -   **Nome**: Nome da vacina (ex: Vacina de teste 5).
+    -   **Doença**: Doença(s) associada(s) à vacina.
+    -   Cada vacina listada possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Vacinas](/img/lista_vacinas.png)
+
+---
+
+## Criando ou Editando uma Vacina
+
+Para **adicionar** uma nova vacina, clique no botão **+ Nova Vacina** localizado no canto superior direito da tela de listagem.
+Para **editar** uma vacina existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Vacina" permite configurar os detalhes da vacina, associá-la a doenças e definir seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro da Vacina">
+-   **Id**: Identificador único da vacina no sistema.
+-   **Nome\***: Campo obrigatório para o nome da vacina (ex: Vacina de teste 5).
+-   **Abas de Configuração**:
+    -   **De/Paras**: Permite mapear a vacina com códigos correspondentes em sistemas externos para garantir a interoperabilidade. Os campos de integração podem incluir sistemas como MV, Tasy, HMED, entre outros.
+    -   **Doenças**: (Inferido) Seção para associar a vacina às doenças específicas que ela previne.
+
+</Admonition>
+
+![Edição de Vacina](/img/edit_vacinas.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Vacinas">
+-   **Use Códigos Oficiais**: Ao cadastrar vacinas, utilize os nomes e códigos do Programa Nacional de Imunizações (PNI) para garantir a padronização e facilitar a comunicação com sistemas governamentais.
+-   **Associe Doenças Corretamente**: Na aba "Doenças", associe corretamente a vacina a todas as doenças que ela protege. Isso é importante para a lógica do sistema e para os registros de saúde.
+-   **Mapeamento De/Para**: A correta configuração dos códigos de integração é fundamental para o envio de dados de vacinação para o prontuário eletrônico do paciente e para plataformas nacionais.
+-   **Mantenha o Cadastro Atualizado**: O calendário de vacinas pode mudar. Mantenha o cadastro de vacinas atualizado com novas inclusões ou alterações de esquemas vacinais.
+</Admonition>

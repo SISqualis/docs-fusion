@@ -1,0 +1,75 @@
+---
+sidebar_position: 4
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { Layers, FileText, Settings, Sliders } from 'lucide-react'; // Ícones ilustrativos
+
+# Layouts
+
+Os Layouts de Integração são um componente essencial no Fusion para garantir a correta estruturação e padronização dos dados trocados com sistemas externos. Eles definem o formato e os campos que serão utilizados, facilitando a interoperabilidade e o monitoramento das informações.
+
+<Admonition type="info" title="O Papel dos Layouts" icon={<Layers />}>
+  <p>
+    Um layout de integração funciona como um "molde" ou "esquema" para os dados. Ele especifica quais informações são esperadas, em que formato e como elas se organizam. Utilizar layouts bem definidos é crucial para o sucesso das integrações, assegurando que os dados sejam interpretados corretamente pelos sistemas envolvidos.
+  </p>
+</Admonition>
+
+## Configurando Layouts no Fusion
+
+A configuração de layouts no Fusion permite uma adaptação precisa às necessidades de cada integração, suportando diversos padrões e oferecendo flexibilidade na definição dos campos.
+
+<Tabs>
+  <TabItem value="tipos" label="Tipos de Layouts Suportados" icon={<FileText />} default>
+    <p>O Fusion oferece suporte a uma variedade de tipos de layouts consagrados na indústria, especialmente no setor de saúde, para promover a interoperabilidade:</p>
+    <ul>
+      <li>
+        <strong>FHIR (Fast Healthcare Interoperability Resources):</strong> Um padrão moderno projetado para permitir a troca de informações de saúde eletrônicas de forma rápida e eficiente. Destaca-se pela sua flexibilidade e uso de tecnologias web.
+      </li>
+      <li>
+        <strong>HL7 (Health Level Seven):</strong> Um conjunto de padrões amplamente utilizado para a troca, integração, compartilhamento e recuperação de informações eletrônicas de saúde.
+      </li>
+      <li>
+        <strong>JSON (JavaScript Object Notation):</strong> Um formato leve de intercâmbio de dados, fácil para humanos lerem e escreverem, e simples para máquinas analisarem e gerarem. Amplamente utilizado em APIs web.
+      </li>
+      <li>
+        <strong>OpenEHR:</strong> Um padrão aberto para o Registro Eletrônico de Saúde (RES), focado na especificação de modelos de informação clínica robustos e longitudinais.
+      </li>
+    </ul>
+    <Admonition type="tip" title="Padronização">
+      O uso desses padrões facilita a comunicação entre diferentes sistemas de informação em saúde, reduzindo a complexidade e os custos de integração.
+    </Admonition>
+  </TabItem>
+
+  <TabItem value="configuracao" label="Processo de Configuração Detalhada" icon={<Settings />}>
+    <p>A configuração detalhada da estrutura interna de um layout no Fusion envolve várias etapas importantes:</p>
+    <ul>
+      <li>
+        <strong>Seleção da Versão:</strong> Para padrões como HL7 ou FHIR, é possível escolher a versão específica do layout que será utilizada, garantindo compatibilidade.
+      </li>
+      <li>
+        <strong>Definição de Campos (Nome do Campo):</strong> Você pode criar e nomear os campos que farão parte da estrutura do layout, especificando os dados que serão transportados.
+      </li>
+      <li>
+        <strong>Associação a Classes:</strong> Cada campo ou conjunto de campos pode ser associado a uma "classe". Essas classes são frequentemente definidas e customizadas conforme as particularidades e os requisitos do projeto do cliente, permitindo uma modelagem de dados precisa.
+      </li>
+    </ul>
+    <p>
+      A interface de configuração de layouts oferece as ferramentas necessárias para realizar esses ajustes, como ilustrado abaixo:
+    </p>
+    <img src="/doc/img/5_layouts.png" alt="Tela de Configuração Detalhada de Layouts de Integração" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+    <figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para configuração da estrutura interna dos layouts.</figcaption>
+  </TabItem>
+</Tabs>
+
+<br/>
+
+<Admonition type="caution" title="Atenção aos Detalhes" icon={<Sliders />}>
+  <p>
+    A correta definição da estrutura do layout, incluindo a escolha do tipo, versão, campos e classes, é fundamental. Erros ou omissões nesta etapa podem levar a falhas na comunicação e interpretação incorreta dos dados entre os sistemas integrados.
+  </p>
+</Admonition>
+
+Dominar a configuração dos layouts de integração no Fusion é um passo chave para construir um ecossistema de informações de saúde interoperável e eficiente.

@@ -1,0 +1,41 @@
+---
+sidebar_position: 5
+---
+
+import Admonition from '@theme/Admonition';
+import { AlertTriangle, ListChecks, Search } from 'lucide-react'; // Ícones ilustrativos
+
+# Pendências de Integração
+
+O monitoramento e tratamento de pendências são cruciais para a saúde e confiabilidade das integrações de dados. No Fusion, a área de "Pendência Integração" é dedicada a listar e facilitar a análise de transações ou processos que não foram concluídos automaticamente durante as rotinas de integração.
+
+<Admonition type="info" title="O Que São Pendências de Integração?" icon={<AlertTriangle />}>
+  <p>
+    Pendências de integração representam itens que, por diversos motivos (falhas de comunicação, dados inconsistentes, erros de validação, etc.), não puderam ser processados de forma automática pelo sistema durante uma tentativa de integração. Estes pontos requerem atenção e análise manual para garantir a integridade e a completude dos dados.
+  </p>
+</Admonition>
+
+## Análise e Tratamento de Pendências
+
+A tela de Pendências de Integração centraliza os itens que exigem intervenção. O objetivo principal é fornecer uma visão clara dos problemas ocorridos, permitindo que os usuários responsáveis possam investigar as causas e tomar as ações corretivas necessárias.
+
+<Admonition type="tip" title="Identificando e Filtrando Pendências" icon={<Search />}>
+  <p>
+    Para auxiliar na análise, a interface geralmente oferece funcionalidades de filtro. Isso permite que os usuários localizem pendências específicas com base em critérios como data, tipo de integração, sistema de origem/destino, entre outros, otimizando o processo de investigação.
+  </p>
+</Admonition>
+
+A imagem abaixo ilustra a interface onde as pendências de integração são apresentadas, destacando a possibilidade de aplicar filtros para refinar a busca:
+
+<img src="/doc/img/18_filtro_de_pendencias.png" alt="Tela de Filtro de Pendências de Integração no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para visualização e filtragem de pendências de integração.</figcaption>
+
+<br/>
+
+<Admonition type="warning" title="Importância da Gestão de Pendências" icon={<ListChecks />}>
+  <p>
+    A gestão proativa das pendências de integração é vital. Ignorar ou adiar a análise desses itens pode levar a inconsistências nos dados, informações desatualizadas ou ausentes nos sistemas, e, em última instância, impactar negativamente as operações e decisões baseadas nesses dados. Um processo bem definido para revisar e resolver pendências é uma prática recomendada.
+  </p>
+</Admonition>
+
+Manter as pendências de integração sob controle é um esforço contínuo que contribui significativamente para a qualidade dos dados e a eficiência dos processos integrados no ambiente Fusion.

@@ -1,0 +1,65 @@
+---
+sidebar_position: 39
+title: Motivo de Alta
+---
+
+import Admonition from '@theme/Admonition';
+
+# Motivo de Alta
+
+O módulo **Motivo de Alta** no sistema Fusion é utilizado para cadastrar e gerenciar os diversos motivos pelos quais um paciente pode receber alta hospitalar ou de um tratamento. Este cadastro é fundamental para registros clínicos, faturamento, estatísticas de saúde e para integrações com outros sistemas, garantindo que a razão da alta seja documentada de forma padronizada.
+
+---
+
+## Acessando o Cadastro de Motivo de Alta
+
+1.  No menu lateral, localize e clique na opção **Motivo de Alta**.
+
+Você será direcionado para a tela "Listagem de Motivos de Alta", que exibe os motivos já cadastrados e permite a filtragem para facilitar a busca:
+
+-   **Filtro de Motivo de Alta**:
+    -   **Id**: Permite buscar pelo identificador único do motivo de alta.
+    -   **Nome**: Permite buscar pela descrição do motivo de alta.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do motivo de alta.
+    -   **Nome**: Descrição do motivo da alta (ex: ALTA COM PREVISÃO DE RETORNO PARA ACOMPANHAMENTO DO PACIENTE, MELHORADO, TRANSFERIDO PARA OUTRO ESTABELECIMENTO).
+    -   Cada motivo listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Motivos de Alta](/img/lista_alta.png)
+
+---
+
+## Criando ou Editando um Motivo de Alta
+
+Para **adicionar** um novo motivo de alta, clique no botão **+ Novo Motivo de Alta** localizado no canto superior direito da tela de listagem.
+Para **editar** um motivo de alta existente, utilize o botão **Editar** ao lado do motivo desejado na listagem.
+
+A tela de "Manutenção Motivo de Alta" permite configurar os detalhes do motivo e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro do Motivo de Alta">
+-   **Id**: Identificador único do motivo de alta no sistema Fusion (ex: 21).
+-   **Nome\***: Campo obrigatório para a descrição principal do motivo da alta (ex: ALTA COM PREVISAO DE RETORNO PARA ACOMPANHAMENTO DO PACIENTE).
+-   **Descrição**: Campo para um detalhamento adicional ou descrição completa do motivo da alta (ex: ALTA COM PREVISAO DE RETORNO PARA ACOMPANHAMENTO DO PACIENTE).
+-   **Códigos de De/Para**: Seção para mapear o motivo de alta com códigos correspondentes em sistemas externos integrados. A sub-seção tem colunas para "Integração", "Aplicações" e "Código".
+    -   **Integrador DF**: Campo para código de integração específico.
+    -   **Integração MV**: Campo para código de integração com o sistema MV (ex: 15).
+    -   **Integração MV com o HOSPITAL MODELO**: Campo para código de integração específico.
+    -   **Integração MV sem SENDING APPLICATION**: Campo para código de integração específico.
+    -   **Integração Tasy**: Campo para código de integração com o sistema Tasy.
+    -   **Api HMED**: Campo para código de integração com a API HMED.
+    -   **Outra integração**: Campo para outros códigos de integração.
+</Admonition>
+
+![Edição de Motivo de Alta](/img/edit_alta.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Motivos de Alta">
+-   **Descrições Claras e Padronizadas**: Utilize descrições que sejam facilmente compreensíveis e, se possível, alinhadas com terminologias padrão do setor de saúde.
+-   **Evite Ambiguidade**: Certifique-se de que cada motivo de alta seja distinto e não haja sobreposição excessiva que possa levar a confusão no registro.
+-   **Mapeamento de Integração Completo**: Preencha os "Códigos de De/Para" para todos os sistemas integrados relevantes. Isso é crucial para a consistência dos dados entre plataformas.
+-   **Revisão Periódica**: Revise os motivos de alta cadastrados periodicamente para garantir que continuam relevantes e precisos, adicionando novos ou inativando os obsoletos conforme necessário.
+-   **Consistência com Outros Cadastros**: Verifique se os motivos de alta estão consistentes com outros cadastros relacionados, como tipos de internação ou desfechos clínicos.
+</Admonition>

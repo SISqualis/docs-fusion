@@ -1,0 +1,69 @@
+---
+sidebar_position: 42
+title: Equipes
+---
+
+import Admonition from '@theme/Admonition';
+
+# Equipes
+
+O módulo **Equipes** no sistema Fusion é destinado ao cadastro e gerenciamento das diversas equipes de saúde que atuam na instituição. Este cadastro é importante para a organização dos serviços, atribuição de responsabilidades, agendamentos e para integrações com outros sistemas que necessitam identificar as equipes envolvidas no cuidado ao paciente.
+
+---
+
+## Acessando o Cadastro de Equipes
+
+1.  No menu lateral, localize e clique na opção **Equipe**.
+
+Você será direcionado para a tela "Listagem de Equipes". Esta tela exibe as equipes já cadastradas e permite a filtragem para facilitar a busca. Caso nenhuma equipe tenha sido cadastrada ou os filtros não retornem resultados, uma mensagem informativa será exibida.
+
+-   **Filtro de Equipe**:
+    -   **Id**: Permite buscar pelo identificador único da equipe.
+    -   **Nome**: Permite buscar pelo nome da equipe.
+    -   **Tipo de Equipe**: Permite filtrar as equipes por seu tipo.
+-   **Colunas da Listagem** (inferido a partir dos filtros, pois a lista está vazia na imagem):
+    -   **Id**: Identificador único da equipe.
+    -   **Nome**: Nome da equipe.
+    -   **Tipo de Equipe**: Categoria ou tipo da equipe.
+    -   Ações como "Editar" são esperadas para cada equipe listada.
+
+![Listagem de Equipes](/img/lista_equipes.png)
+
+---
+
+## Criando ou Editando uma Equipe
+
+Para **adicionar** uma nova equipe, clique no botão **+ Nova Equipe** localizado no canto superior direito da tela de listagem.
+Para **editar** uma equipe existente, você a localizaria na listagem e clicaria no botão de edição correspondente.
+
+A tela de "Manutenção Equipe" permite configurar os detalhes da equipe, incluindo seu tipo e mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro da Equipe">
+-   **Nome\***: Campo obrigatório para definir o nome da equipe.
+-   **Tipo de Equipe**: Campo de seleção para definir a categoria ou especialidade da equipe.
+-   **Códigos de De/Para**: Seção utilizada para mapear a equipe com códigos correspondentes em sistemas externos integrados. É possível que haja sub-abas como "Códigos Tabela" para mapeamentos mais específicos.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código da equipe no respectivo sistema integrado.
+    -   Campos específicos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+        -   Outra integração
+</Admonition>
+
+![Edição de Equipe](/img/edit_equipes.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Equipes">
+-   **Nomenclatura Padronizada**: Utilize nomes claros e padronizados para as equipes, facilitando a identificação e a busca.
+-   **Tipos de Equipe Bem Definidos**: Crie e utilize "Tipos de Equipe" que reflitam a estrutura organizacional e funcional da instituição.
+-   **Mapeamento de Integração Detalhado**: A correta configuração dos "Códigos de De/Para" é essencial para que outros sistemas possam identificar e processar informações relacionadas à equipe corretamente.
+-   **Composição da Equipe**: Embora não visível nas telas de cadastro da equipe em si, a definição dos membros da equipe geralmente ocorre em outro módulo ou funcionalidade associada. Garanta que as equipes tenham seus membros corretamente atribuídos.
+-   **Revisão e Atualização**: Periodicamente, revise o cadastro de equipes para garantir que ele reflete a estrutura atual de atendimento, inativando equipes que não existem mais e atualizando informações conforme necessário.
+</Admonition>

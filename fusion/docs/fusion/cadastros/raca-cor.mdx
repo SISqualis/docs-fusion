@@ -1,0 +1,62 @@
+---
+sidebar_position: 56
+title: Raça/Cor
+---
+
+import Admonition from '@theme/Admonition';
+
+# Raça/Cor
+
+O módulo **Raça/Cor** é utilizado para cadastrar as categorias de raça/cor utilizadas no registro demográfico dos pacientes. Este cadastro é fundamental para a coleta de dados de saúde, para atender a requisitos legais e para a integração com sistemas que exigem essa informação, geralmente seguindo o padrão do IBGE (Branca, Preta, Parda, Amarela e Indígena).
+
+---
+
+## Acessando o Cadastro de Raça/Cor
+
+1.  No menu lateral, localize e clique na opção **Raça/Cor**.
+
+Você será direcionado para a tela "Listagem de Raça/Cor", que exibe todas as categorias cadastradas.
+
+-   **Filtro de Raça/Cor**:
+    -   **Id**: Permite buscar pelo identificador único da categoria.
+    -   **Nome**: Permite buscar pelo nome da categoria.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da categoria.
+    -   **Nome**: Nome da categoria de raça/cor (ex: Branco).
+    -   Cada categoria listada possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Raça/Cor](/img/lista_cor.png)
+
+---
+
+## Criando ou Editando uma Categoria de Raça/Cor
+
+Para **adicionar** uma nova categoria, clique no botão **+ Nova Raça/Cor** localizado no canto superior direito da tela de listagem.
+Para **editar** uma categoria existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Raça/Cor" permite configurar o nome da categoria e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro de Raça/Cor">
+-   **Id**: Identificador único da categoria no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da categoria (ex: Branco).
+-   **Códigos de De/Para**: Seção para mapear a categoria com códigos correspondentes em sistemas externos. A sub-seção pode ter colunas como "Integrações" e "Aplicações".
+    -   **Integrador DF**: Campo para código de integração específico (ex: B).
+    -   **Integração MV**: Campo para código de integração com o sistema MV.
+    -   **Integração MV com o HOSPITAL MODELO**: Campo para código de integração específico.
+    -   **Integração MV sem SENDING APPLICATION**: Campo para código de integração específico.
+    -   **Integração Tasy**: Campo para código de integração com o sistema Tasy.
+
+</Admonition>
+
+![Edição de Raça/Cor](/img/edit_cor.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Raça/Cor">
+-   **Padrão IBGE**: É altamente recomendável utilizar as cinco categorias oficiais do Instituto Brasileiro de Geografia e Estatística (IBGE): Branca, Preta, Parda, Amarela e Indígena. Isso garante a conformidade com os padrões nacionais.
+-   **Mapeamento para Integrações**: O mapeamento correto dos códigos de De/Para é crucial para a interoperabilidade com sistemas governamentais (como o e-SUS) e outros sistemas de prontuário eletrônico.
+-   **Sensibilidade da Informação**: O dado de raça/cor é autodeclarado pelo paciente. Garanta que os processos da instituição respeitem essa autodeclaração.
+-   **Evite Redundância**: Mantenha o cadastro limitado às categorias padrão para evitar inconsistências e dificuldades na análise de dados.
+</Admonition>

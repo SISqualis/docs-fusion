@@ -1,0 +1,58 @@
+---
+sidebar_position: 20
+---
+
+import Admonition from '@theme/Admonition';
+import { FileWarning, ListX, Wrench, CheckCircle2, AlertOctagon } from 'lucide-react'; // Ícones ilustrativos
+
+# Pendências de Importação
+
+Após uma "Solicitação de Importação de Pacientes", nem sempre o processo ocorre sem percalços. A seção de "Pendências de Importação" no Fusion seria a área dedicada a identificar, analisar e tratar quaisquer erros, inconsistências ou falhas que possam ter ocorrido durante a tentativa de importar dados de pacientes para o sistema.
+
+<Admonition type="info" title="O Que São Pendências de Importação?" icon={<FileWarning />}>
+  <p>
+    Pendências de Importação são registros de pacientes ou conjuntos de dados que não puderam ser importados com sucesso para o sistema Fusion durante um processo de importação em lote. Essas pendências são sinalizadas para revisão manual, permitindo que os problemas sejam diagnosticados e corrigidos, visando garantir a integridade e a completude dos dados no sistema.
+  </p>
+</Admonition>
+
+## Causas Comuns e Tratamento de Pendências de Importação
+
+Diversos fatores podem levar à geração de pendências durante um processo de importação. A tela de gerenciamento dessas pendências geralmente oferece ferramentas para:
+
+* **Identificar a Causa do Erro:**
+    * **Erros de Formato:** Dados que não seguem o layout esperado (ex: datas em formato incorreto, campos obrigatórios vazios).
+    * **Falhas de Validação:** Dados que não cumprem regras de negócio do sistema (ex: CPF/CNS inválido, código de procedimento inexistente).
+    * **Duplicidade de Registros:** Tentativa de importar pacientes que já existem no banco de dados, sem uma regra clara para tratamento de duplicatas.
+    * **Problemas de Mapeamento:** Configuração incorreta no mapeamento dos campos do arquivo de origem para os campos do sistema Fusion.
+* **Analisar os Dados Pendentes:** Visualizar os dados específicos que causaram a pendência, juntamente com mensagens de erro detalhadas.
+* **Resolver as Pendências:**
+    * **Correção na Origem:** Ajustar os dados no arquivo ou sistema de origem e tentar uma nova importação.
+    * **Ajuste de Mapeamento/Regras:** Modificar as configurações de importação no Fusion para lidar corretamente com os dados.
+    * **Intervenção Manual:** Permitir a correção direta de alguns dados ou a decisão de ignorar/rejeitar registros específicos.
+    * **Reprocessamento:** Tentar importar novamente os registros pendentes após a correção.
+
+<Admonition type="tip" title="Ferramentas de Análise e Correção" icon={<Wrench />}>
+  <p>
+    Uma interface eficaz para o gerenciamento de pendências de importação normalmente oferece funcionalidades como:
+    <ul>
+      <li>Listagem detalhada das pendências com mensagens de erro claras.</li>
+      <li>Filtros para localizar pendências por tipo de erro, data da importação, arquivo de origem, etc.</li>
+      <li>Opções para visualizar os dados do registro que falhou.</li>
+      <li>Ações para reprocessar, editar (se aplicável e seguro) ou descartar registros pendentes.</li>
+    </ul>
+  </p>
+</Admonition>
+
+<Admonition type="warning" title="Impacto na Integridade dos Dados" icon={<AlertOctagon />}>
+  <p>
+    O tratamento adequado das pendências de importação é crucial para a qualidade e integridade dos dados no Fusion. Ignorar essas pendências pode levar a um banco de dados incompleto, inconsistente ou com informações incorretas, afetando negativamente o atendimento ao paciente e as operações da instituição.
+  </p>
+</Admonition>
+
+<Admonition type="note" title="Interface Visual e Fluxo de Trabalho">
+  <p>
+    Como não foi fornecida uma imagem específica para esta funcionalidade no material de origem, a descrição acima é baseada em funcionalidades comuns de sistemas que gerenciam pendências de importação. Uma tela para "Pendências de Importação" geralmente se assemelharia a outras telas de listagem de pendências (como as de integração ou aplicações), exibindo uma grade de itens problemáticos com detalhes e opções de ação. O fluxo de trabalho envolve a revisão periódica dessas pendências por equipes designadas.
+  </p>
+</Admonition>
+
+O gerenciamento eficaz de "Pendências de Importação" no Fusion assegura que os desafios inerentes aos processos de carga de dados sejam tratados de forma sistemática, resultando em uma base de dados de pacientes mais confiável e precisa.

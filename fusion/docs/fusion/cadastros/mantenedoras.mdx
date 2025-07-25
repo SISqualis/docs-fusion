@@ -1,0 +1,62 @@
+---
+sidebar_position: 58
+title: Mantenedoras
+---
+
+import Admonition from '@theme/Admonition';
+
+# Mantenedoras
+
+O módulo **Mantenedoras** é utilizado para cadastrar as entidades mantenedoras das instituições de saúde. Uma mantenedora é a organização-mãe ou a entidade legal responsável por uma ou mais instituições, como uma fundação, uma secretaria de saúde ou um grupo empresarial. Este cadastro é importante para a estrutura organizacional e para fins de relatórios e integrações em um nível corporativo.
+
+---
+
+## Acessando o Cadastro de Mantenedoras
+
+1.  No menu lateral, localize e clique na opção **Mantenedoras**.
+
+Você será direcionado para a tela "Listagem de Mantenedoras", que exibe todas as entidades mantenedoras cadastradas.
+
+-   **Filtro de Mantenedora**:
+    -   **Id**: Permite buscar pelo identificador único da mantenedora.
+    -   **Nome**: Permite buscar pelo nome da mantenedora.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da mantenedora.
+    -   **Nome**: Nome da entidade mantenedora (ex: Teste).
+    -   Cada mantenedora listada possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Mantenedoras](/img/lista_mnt.png)
+
+---
+
+## Criando ou Editando uma Mantenedora
+
+Para **adicionar** uma nova mantenedora, clique no botão **+ Nova Mantenedora** localizado no canto superior direito da tela de listagem.
+Para **editar** uma mantenedora existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Mantenedoras" permite configurar o nome da entidade e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro da Mantenedora">
+-   **Id**: Identificador único da mantenedora no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da mantenedora (ex: Teste).
+-   **Códigos de De/Para**: Seção para mapear a mantenedora com códigos correspondentes em sistemas externos, o que é útil em cenários de múltiplos sistemas ou relatórios consolidados. A sub-seção pode ter colunas como "Integrações" e "Aplicações".
+    -   **Integrador DF**: Campo para código de integração específico.
+    -   **Integração MV**: Campo para código de integração com o sistema MV (ex: 111).
+    -   **Integração MV com o HOSPITAL MODELO**: Campo para código de integração específico.
+    -   **Integração MV sem SENDING APPLICATION**: Campo para código de integração específico.
+    -   **Integração Tasy**: Campo para código de integração com o sistema Tasy.
+
+</Admonition>
+
+![Edição de Mantenedora](/img/edit_mnt.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Mantenedoras">
+-   **Estrutura Corporativa**: Use este cadastro para refletir a estrutura hierárquica ou corporativa do seu grupo de saúde.
+-   **Distinção de Instituição**: Entenda a diferença: a "Instituição" é o hospital ou clínica (o estabelecimento), enquanto a "Mantenedora" é a entidade legal por trás dele.
+-   **Mapeamento para Consolidação**: O mapeamento de "Códigos de De/Para" é especialmente importante se você utiliza sistemas de Business Intelligence (BI) ou outros sistemas de gestão que consolidam dados de várias instituições sob a mesma mantenedora.
+-   **Dados Legais**: Se houver campos para CNPJ ou outros dados legais, preencha-os para manter um registro completo e preciso.
+</Admonition>

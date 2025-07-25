@@ -1,0 +1,45 @@
+---
+sidebar_position: 7
+---
+
+import Admonition from '@theme/Admonition';
+import { ShieldAlert, FileLock, Edit } from 'lucide-react'; // Ícones ilustrativos
+
+# Quebra de Vidro
+
+No contexto de sistemas de informação em saúde, o acesso aos dados do paciente é rigorosamente controlado para proteger a privacidade e a confidencialidade. O mecanismo de "Quebra de Vidro" (Break the Glass) é um procedimento de acesso excepcional, e o Fusion requer a identificação do motivo para tais acessos.
+
+<Admonition type="info" title="Entendendo o Conceito de &quot;Quebra de Vidro&quot;" icon={<ShieldAlert />}>
+  <p>
+    "Quebra de Vidro" refere-se a uma situação em que um usuário autorizado precisa acessar informações de saúde de um paciente fora dos protocolos normais de consentimento ou acesso — geralmente em emergências ou circunstâncias excepcionais. Conforme descrito, sempre que não é possível obter o consentimento do próprio paciente para acessar suas informações de saúde, é necessário identificar a necessidade pela qual estas estão sendo acessadas.
+  </p>
+</Admonition>
+
+## Justificativa Obrigatória para Acesso Excepcional
+
+A funcionalidade de "Motivos Quebra de Vidro" no Fusion visa garantir que todo acesso realizado sob este mecanismo seja devidamente justificado e registrado. Isso é fundamental por várias razões:
+
+* **Rastreabilidade e Auditoria:** Registrar o motivo permite que todas as ações de quebra de vidro sejam auditadas posteriormente. Isso ajuda a verificar a legitimidade do acesso e a identificar quaisquer abusos ou acessos indevidos.
+* **Conformidade (Compliance):** Muitas regulamentações de proteção de dados em saúde (como LGPD no Brasil, HIPAA nos EUA, GDPR na Europa) exigem trilhas de auditoria robustas e justificativas para acessos a dados sensíveis, especialmente em cenários excepcionais.
+* **Segurança do Paciente:** Em situações de emergência, o acesso rápido à informação pode ser vital. O mecanismo de quebra de vidro facilita isso, mas o registro do motivo assegura que tal facilidade não comprometa a segurança e a privacidade a longo prazo.
+
+A imagem abaixo ilustra a interface ou o conceito relacionado ao registro de motivos para a quebra de vidro no sistema Fusion:
+
+<img src="/doc/img/7_quebra_de_vidro.png" alt="Tela de Motivos para Quebra de Vidro no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para identificação da necessidade de acesso excepcional.</figcaption>
+
+<br/>
+
+<Admonition type="warning" title="Responsabilidade no Acesso" icon={<FileLock />}>
+  <p>
+    Utilizar o mecanismo de "Quebra de Vidro" é um ato de grande responsabilidade. Os usuários devem estar cientes de que seus acessos serão registrados e poderão ser auditados. A justificativa fornecida deve ser clara, precisa e condizente com a situação que motivou o acesso excepcional.
+  </p>
+</Admonition>
+
+<Admonition type="note" title="Configuração de Motivos" icon={<Edit />}>
+  <p>
+    É provável que o sistema permita a configuração prévia de motivos comuns para "Quebra de Vidro" (ex: "Emergência Médica", "Risco de Vida ao Paciente", "Ordem Judicial", etc.), facilitando o registro pelo usuário no momento do acesso e padronizando as justificativas para fins de auditoria.
+  </p>
+</Admonition>
+
+A gestão de motivos para quebra de vidro é uma salvaguarda essencial no Fusion, equilibrando a necessidade de acesso rápido a informações críticas com a proteção rigorosa da privacidade e segurança dos dados do paciente.

@@ -1,0 +1,60 @@
+---
+sidebar_position: 51
+title: Tipos de Diagnóstico
+---
+
+import Admonition from '@theme/Admonition';
+
+# Tipos de Diagnóstico
+
+O módulo **Tipos de Diagnóstico** é utilizado para cadastrar as diferentes classificações que um diagnóstico pode receber ao longo do atendimento do paciente. Exemplos comuns incluem "Principal", "Inicial", "Final", "Definitivo" e "Preliminar". Este cadastro permite estruturar a informação do diagnóstico, o que é fundamental para a continuidade do cuidado, registros clínicos e para a correta comunicação com outros sistemas de saúde.
+
+---
+
+## Acessando o Cadastro de Tipos de Diagnóstico
+
+1.  No menu lateral, localize e clique na opção **Tipos Diagnóstico**.
+
+Você será direcionado para a tela "Listagem de Tipos de Diagnóstico", que exibe todas as classificações já cadastradas.
+
+-   **Filtro de Tipos de Diagnóstico**:
+    -   **Id**: Permite buscar pelo identificador único do tipo de diagnóstico.
+    -   **Nome**: Permite buscar pelo nome do tipo de diagnóstico.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do tipo.
+    -   **Nome**: Nome do tipo de diagnóstico (ex: Principal, Inicial, Final).
+    -   Cada tipo listado possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Tipos de Diagnóstico](/img/lista_tipo_diag.png)
+
+---
+
+## Criando ou Editando um Tipo de Diagnóstico
+
+Para **adicionar** um novo tipo, clique no botão **+ Novo Tipo de Diagnóstico** localizado no canto superior direito da tela de listagem.
+Para **editar** um tipo existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Tipo de Diagnóstico" permite configurar os detalhes da classificação e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro do Tipo de Diagnóstico">
+-   **Id**: Identificador único do tipo no sistema (geralmente não editável).
+-   **Nome\***: Campo obrigatório para o nome do tipo de diagnóstico (ex: Principal).
+-   **Códigos de De/Para**: Seção para mapear o tipo de diagnóstico com códigos correspondentes em sistemas externos.
+    -   **Integração**: Nome do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado (ex: F para Integrador DF).
+    -   Os campos podem incluir integrações com sistemas como MV, Tasy, HMED, entre outros.
+
+</Admonition>
+
+![Edição de Tipo de Diagnóstico](/img/edit_tipo_diag.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Tipos de Diagnóstico">
+-   **Mantenha a Simplicidade**: Cadastre apenas os tipos que são realmente utilizados nos processos da sua instituição para evitar complexidade desnecessária.
+-   **Importância Clínica**: A diferenciação entre um diagnóstico "Inicial" e um "Definitivo" é de grande importância clínica e legal. Garanta que os usuários compreendam a finalidade de cada tipo.
+-   **Mapeamento para Integração**: O correto mapeamento dos códigos de De/Para é crucial para que outros sistemas, como prontuários eletrônicos ou sistemas de faturamento, interpretem corretamente o status do diagnóstico.
+-   **Padronização**: Alinhe os tipos de diagnóstico com os padrões adotados pela instituição ou por regulamentações do setor.
+</Admonition>

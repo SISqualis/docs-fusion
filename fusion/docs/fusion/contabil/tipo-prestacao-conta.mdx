@@ -1,0 +1,66 @@
+---
+sidebar_position: 2
+title: Tipo de Prestação de Contas
+---
+
+import Admonition from '@theme/Admonition';
+
+# Tipo de Prestação de Contas
+
+O módulo **Tipo de Prestação de Contas**, localizado na seção **Contábil**, é uma área de configuração técnica avançada. Ele é utilizado para definir rotinas de integração específicas para processos de prestação de contas, faturamento ou envio de dados financeiros. Cada "tipo" representa uma configuração completa de fluxo de dados, especificando os sistemas de origem e destino, e os parâmetros técnicos necessários para a comunicação, como URLs de API e credenciais de acesso.
+
+---
+
+## Acessando o Cadastro de Tipos de Prestação de Contas
+
+1.  No menu lateral, clique em **Contábil**.
+2.  Em seguida, acesse a opção **Tipo Prestação Contas**.
+
+Você será direcionado para a tela "Listagem de Tipos de Prestação de Contas", que exibe todas as configurações de rotinas de integração já criadas.
+
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da configuração.
+    -   **Nome**: Nome descritivo da rotina (ex: Teste 1).
+    -   **Integração Origem**: Sistema de onde os dados serão extraídos (ex: Integração MV).
+    -   **Servidor Origem**: Servidor específico do sistema de origem (ex: Nox Sicap MV).
+    -   **Integração Destino**: Sistema para onde os dados serão enviados (ex: Api HMED).
+    -   **Tipo Rotina**: Identificador do tipo de rotina a ser executada (ex: SICAP).
+    -   Cada item listado possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Tipos de Prestação de Contas](/img/lista_tipo_contas.png)
+
+---
+
+## Criando ou Editando um Tipo de Prestação de Contas
+
+Para **adicionar** uma nova configuração, clique no botão **+ Novo Tipo de Prestação de Contas** localizado no canto superior direito.
+Para **editar** uma configuração existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Tipo de Prestação de Contas" é onde todos os detalhes técnicos da rotina de integração são definidos.
+
+<Admonition type="info" title="Campos de Configuração">
+-   **Nome\***: Nome para identificar a configuração (ex: Teste 1).
+-   **Integração Origem\***: Seleção do sistema de origem dos dados (ex: MV - Integração MV).
+-   **Servidor Origem\***: Seleção do servidor de origem (ex: Nox Sicap MV).
+-   **Integração Destino\***: Seleção do sistema de destino dos dados (ex: HMED - Api HMED).
+-   **Tipo Rotina\***: Seleção do tipo de rotina a ser executada (ex: SICAP).
+-   **Parâmetros**: Seção para configurar os detalhes técnicos da conexão com o sistema de destino.
+    -   **Url Base**: Endereço principal da API do sistema de destino (ex: https://sicap-homolog.azurew...).
+    -   **Url de Login**: Endereço para autenticação na API (ex: https://sicap-homolog.azurew...).
+    -   **Login**: Nome de usuário para a autenticação (ex: diego.santos).
+    -   **Senha**: Senha para a autenticação (ex: TbdB31038).
+
+</Admonition>
+
+![Edição de Tipo de Prestação de Contas](/img/edit_tipo_contas.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="danger" title="Acesso Restrito">
+-   Este é um módulo de configuração técnica. O acesso deve ser restrito a administradores de sistema ou à equipe de TI responsável pelas integrações.
+-   **Credenciais de Acesso**: A tela contém informações sensíveis, como nomes de usuário e senhas de integração. Manuseie com extremo cuidado e siga as políticas de segurança da informação da sua empresa.
+-   **Validação de Parâmetros**: Qualquer erro nos parâmetros (URLs, login, senha) fará com que a rotina de integração falhe. Sempre valide os dados com a equipe técnica do sistema de destino.
+-   **Ambientes de Teste**: Antes de configurar uma rotina para um ambiente de produção, é altamente recomendável realizar testes em um ambiente de homologação.
+</Admonition>

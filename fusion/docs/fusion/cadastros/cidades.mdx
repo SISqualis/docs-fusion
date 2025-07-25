@@ -1,0 +1,60 @@
+---
+sidebar_position: 7
+title: Cidades
+---
+
+import Admonition from '@theme/Admonition';
+
+# Cadastro de Cidades
+
+O módulo de **Cidades** do Fusion permite registrar os municípios vinculados aos estados previamente cadastrados. Essa base é essencial para preenchimento de endereços, localização de unidades e envio de dados padronizados a sistemas integrados.
+
+---
+
+## Acessando o Cadastro
+
+1. No menu lateral, clique em **Cadastros**.
+2. Em seguida, selecione a opção **Cidades**.
+
+A listagem apresenta os seguintes campos:
+
+- **Id**: Código identificador.
+- **Estado**: Estado ao qual a cidade pertence.
+- **Nome**: Nome da cidade.
+
+![Tela de Listagem de Cidades](/img/lista_cidades.png)
+
+---
+
+## Adicionando ou Editando Cidades
+
+Clique em **+ Nova Cidade** ou no botão **Editar** ao lado de uma cidade existente para abrir a tela de manutenção.
+
+<Admonition type="info" title="Campos do formulário">
+- **Nome**: Nome da cidade (ex: Porto Alegre).
+- **País**: Selecionado automaticamente a partir do estado.
+- **Estado**: Estado vinculado à cidade.
+</Admonition>
+
+![Tela de Manutenção de Cidade](/img/edit_cidades.png)
+
+---
+
+## Integrações e Códigos De/Para
+
+Assim como em outros cadastros, é possível mapear códigos específicos para cada cidade de acordo com as plataformas externas integradas (MV, Tasy, DF, entre outros).
+
+<Admonition type="tip" title="Evite inconsistências">
+Certifique-se de que os nomes e códigos das cidades correspondem às nomenclaturas utilizadas nos sistemas parceiros, para evitar falhas de comunicação.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações">
+- Evite registros genéricos como números ou abreviações incorretas.
+- Verifique se o estado correspondente já está corretamente cadastrado.
+- Utilize letras maiúsculas apenas quando necessário.
+- Revise periodicamente os mapeamentos de integração.
+</Admonition>

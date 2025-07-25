@@ -1,0 +1,65 @@
+---
+sidebar_position: 47
+title: Lateralidades
+---
+
+import Admonition from '@theme/Admonition';
+
+# Lateralidades
+
+O módulo **Lateralidades** é utilizado para cadastrar os conceitos de lado (ex: Esquerdo, Direito, Bilateral), que são essenciais para especificar a localização de procedimentos, diagnósticos ou achados clínicos em órgãos ou membros pares. Este cadastro complementa o módulo "Localidades", garantindo a precisão da informação clínica registrada.
+
+---
+
+## Acessando o Cadastro de Lateralidades
+
+1.  No menu lateral, localize e clique na opção **Lateralidades**.
+
+Você será direcionado para a tela "Listagem de Lateralidades", que exibe todas as lateralidades cadastradas.
+
+-   **Filtro de Listagem de Lateralidades**:
+    -   **Id**: Permite buscar pelo identificador único da lateralidade.
+    -   **Nome**: Permite buscar pelo nome da lateralidade.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da lateralidade.
+    -   **Nome**: Nome da lateralidade (ex: Esquerda).
+    -   Cada lateralidade listada possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Lateralidades](/img/lista_later.png)
+
+---
+
+## Criando ou Editando uma Lateralidade
+
+Para **adicionar** uma nova lateralidade, clique no botão **+ Nova Lateralidade** localizado no canto superior direito da tela de listagem.
+Para **editar** uma lateralidade existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção de Lateralidades" permite configurar o nome da lateralidade e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro da Lateralidade">
+-   **Id**: Identificador único da lateralidade no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da lateralidade (ex: Esquerda).
+-   **De/Paras**: Seção utilizada para mapear a lateralidade com códigos correspondentes em sistemas e integrações externas.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado.
+    -   Exemplos de campos de integração incluem:
+        -   Amigo App
+        -   Api HMED
+        -   Defensoria Pública Estado do Pará
+        -   Instituição de teste 2
+        -   Integrador DF
+        -   Integração Consulfarma
+</Admonition>
+
+![Edição de Lateralidade](/img/edit_later.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Lateralidades">
+-   **Terminologia Padrão**: Utilize termos padrão e inequívocos, como "Direita", "Esquerda", "Bilateral". Evite abreviações que possam causar confusão.
+-   **Relevância Clínica**: A correta especificação da lateralidade é crítica para a segurança do paciente, evitando erros em procedimentos cirúrgicos e tratamentos.
+-   **Mapeamento para Padrões Internacionais**: Ao integrar com outros sistemas, especialmente para laudos e relatórios, mapeie as lateralidades para padrões como SNOMED CT ou HL7, se aplicável.
+-   **Cadastro Essencial**: Mantenha um cadastro enxuto e preciso com as opções mais comuns (Direita, Esquerda, Bilateral, Medial, etc.), evitando criar opções redundantes.
+</Admonition>

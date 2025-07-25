@@ -1,0 +1,69 @@
+---
+sidebar_position: 3
+title: Prestação de Contas
+---
+
+import Admonition from '@theme/Admonition';
+
+# Prestação de Contas
+
+O módulo **Prestação de Contas**, localizado na seção **Contábil**, é a tela operacional para a criação e gerenciamento de relatórios de prestação de contas. É aqui que o usuário inicia um novo processo de faturamento ou prestação de contas, utilizando as configurações definidas em "Tipo de Prestação de Contas", e preenche as informações necessárias, como responsáveis, datas, e os lotes de pagamentos a serem processados.
+
+---
+
+## Acessando a Prestação de Contas
+
+1.  No menu lateral, clique em **Contábil**.
+2.  Em seguida, acesse a opção **Prestação Contas**.
+
+Você será direcionado para a tela "Listagem de Prestação de Contas", que exibe todos os processos de prestação de contas já criados.
+
+-   **Filtro de Prestação de Contas**: Permite buscar os registros por:
+    -   Id
+    -   Mês Integração
+    -   Tipo
+    -   Parceria
+    -   Coordenadoria
+    -   Nome Instituição
+-   A listagem exibirá os resultados correspondentes aos filtros.
+
+![Listagem de Prestação de Contas](/img/lista_contas.png)
+
+---
+
+## Criando ou Editando uma Prestação de Contas
+
+Para **iniciar** um novo processo, clique no botão **+ Nova Prestação de Contas** localizado no canto superior direito.
+Para **editar** um processo existente, localize-o na listagem e utilize o botão "Editar" correspondente.
+
+A tela de "Manutenção Prestação de Contas" é onde todos os dados do processo são informados:
+
+<Admonition type="info" title="Campos do Processo de Prestação de Contas">
+-   **Data Início Mês Base\***: Campo de data para informar o início do período de referência.
+-   **Tipo de Prestação de Contas\***: Campo de seleção para escolher a rotina de integração previamente configurada.
+-   **Parceria\***: Campo de seleção obrigatório para indicar a entidade parceira envolvida.
+-   **Responsável Financeiro\***: Nome do responsável financeiro pelo processo.
+-   **CPF Responsável Financeiro\***: CPF do responsável financeiro.
+-   **Responsável Legal\***: Nome do responsável legal pelo processo.
+-   **CPF Responsável Legal\***: CPF do responsável legal.
+-   **Coordenadoria\***: Campo de seleção para a coordenadoria ou setor responsável.
+-   **Instituição\***: Campo de seleção para a instituição relacionada.
+-   **Anexo**: Botão para anexar arquivos relevantes ao processo.
+-   **Lotes**: Seção para adicionar e gerenciar os lotes de pagamento.
+    -   Clique em **+ Adicionar Lote** para incluir um novo lote no processo.
+    -   Cada lote possui um **Id**, **Data Pagamento Inicial** e **Data Pagamento Final**.
+
+</Admonition>
+
+![Edição de Prestação de Contas](/img/edit_contas.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="danger" title="Atenção aos Detalhes">
+-   **Campos Obrigatórios**: Preencha todos os campos marcados com `*` (asterisco), pois são essenciais para a validade e o processamento da prestação de contas.
+-   **Informações dos Responsáveis**: Garanta que os nomes e CPFs dos responsáveis legal e financeiro estejam corretos e atualizados, pois são informações de validade jurídica.
+-   **Gerenciamento de Lotes**: A seção de lotes é fundamental para agrupar pagamentos ou transações. Certifique-se de que as datas de pagamento de cada lote estejam corretas para o período que está sendo reportado.
+-   **Anexos**: Utilize a função de anexo para incluir comprovantes, notas fiscais, ou qualquer outra documentação que suporte a prestação de contas.
+</Admonition>

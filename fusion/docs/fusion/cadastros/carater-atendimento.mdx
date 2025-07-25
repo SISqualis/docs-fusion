@@ -1,0 +1,58 @@
+---
+sidebar_position: 9
+title: Caráter de Atendimento
+---
+
+import Admonition from '@theme/Admonition';
+
+# Caráter de Atendimento
+
+O módulo **Caráter de Atendimento** permite classificar a natureza de um atendimento dentro do Fusion. Essa classificação é essencial para o correto registro clínico, faturamento e integração com sistemas externos que exigem esse tipo de informação.
+
+---
+
+## Acessando o Módulo
+
+1. No menu lateral, acesse **Cadastros**.
+2. Clique em **Caráter de Atendimento**.
+
+A tela exibe os seguintes campos:
+
+- **Id**
+- **Nome** (ex: Urgência, Eletivo, Normal)
+
+![Tela de Listagem de Caráter de Atendimento](/img/lista_car_atendimento.png)
+
+---
+
+## Criando ou Editando um Registro
+
+Clique em **+ Novo Caráter Atendimento** ou no botão **Editar** de um item existente para abrir o formulário de manutenção.
+
+<Admonition type="info" title="Campos obrigatórios">
+- **Nome**: Descrição do caráter do atendimento.
+</Admonition>
+
+Além disso, é possível configurar **Códigos de Integração (De/Para)** com outros sistemas de saúde utilizados pela instituição.
+
+![Tela de Edição de Caráter de Atendimento](/img/edit_car_atendimento.png)
+
+---
+
+## Integração De/Para
+
+Esse campo permite a interoperabilidade com ERPs, plataformas hospitalares (MV, Tasy, entre outros) e sistemas públicos de saúde. Cada caráter pode receber um ou mais códigos de integração específicos.
+
+<Admonition type="tip" title="Evite conflitos de integração">
+Confirme os códigos com o setor de TI ou com o fornecedor da plataforma integrada antes de preencher os campos De/Para.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações">
+- Utilize nomenclaturas reconhecidas pelo setor clínico e administrativo (ex: Urgência, Eletivo).
+- Evite cadastrar duplicidades ou termos genéricos como "Teste".
+- Mantenha os códigos de integração atualizados.
+</Admonition>

@@ -1,0 +1,107 @@
+/* styles.module.css */
+
+.cardContainer {
+    --ifm-link-color: var(--ifm-color-emphasis-800);
+    --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+    --ifm-link-hover-decoration: none;
+
+    box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
+    border: 1px solid var(--ifm-color-emphasis-200);
+    transition: all var(--ifm-transition-fast) ease;
+    transition-property: border, box-shadow;
+}
+
+.cardContainer:hover {
+    border-color: var(--ifm-color-primary);
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.cardContainer *:last-child {
+    margin-bottom: 0;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    /* 5. Adicionar display flex para alinhar ícone e texto */
+    display: flex;
+    align-items: center;
+}
+
+.cardDescription {
+    font-size: 0.8rem;
+}
+
+/* 6. Estilos para o ícone */
+.cardIcon {
+    display: inline-block; /* Garante que o span se comporte como um bloco para width/height */
+    width: 1.1em; /* Ajuste o tamanho conforme necessário, relativo ao font-size */
+    height: 1.1em; /* Ajuste o tamanho conforme necessário */
+    margin-right: 0.4em; /* Espaço entre o ícone e o título */
+    color: var(
+        --ifm-color-primary
+    ); /* Cor do ícone, pode ser var(--ifm-font-color-base) ou outra cor do tema */
+    /* Se quiser que a cor do ícone seja a mesma do texto do título: */
+    /* color: currentColor; */
+    /* stroke-width: 1.5; /* Para ícones outline, pode ajustar a espessura da linha se necessário */
+}
+
+/* Opcional: Mudar a cor do ícone no hover do card, se o título também mudar */
+/*
+.cardContainer:hover .cardTitle {
+  color: var(--ifm-link-hover-color);
+}
+.cardContainer:hover .cardIcon {
+  color: var(--ifm-link-hover-color);
+}
+*/
+
+/* Seus estilos existentes .cardContainer, etc. ... */
+.cardContainer {
+    --ifm-link-color: var(--ifm-color-emphasis-800);
+    --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+    --ifm-link-hover-decoration: none;
+
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0);
+    border: 1px solid var(--ifm-color-emphasis-200);
+    transition: all var(--ifm-transition-fast) ease;
+    transition-property: border, box-shadow;
+    /* display: flex;  Pode ser útil dependendo do layout interno desejado */
+    /* flex-direction: column; */
+}
+
+.cardContainer:hover {
+    border-color: var(--ifm-color-primary);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0);
+}
+
+.cardContainer *:last-child {
+    margin-bottom: 0;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    display: flex; /* Alinha o ícone e o texto na mesma linha */
+    align-items: center; /* Centraliza verticalmente o ícone com o texto */
+}
+
+/* Novo estilo para o wrapper do ícone */
+.cardIcon {
+    margin-right: 0.6em; /* Espaço entre o ícone e o título */
+    display: inline-flex; /* Ajuda no alinhamento vertical */
+    align-items: center;
+    /* Opcional: defina uma cor padrão para os ícones, se não for via props */
+    /* color: var(--ifm-color-primary); */
+}
+
+/* Estilo opcional para o SVG dentro do cardIcon, se precisar de ajustes finos */
+/* .cardIcon svg { */
+/* Se você não passou 'size' como prop, pode definir aqui */
+/* width: 1.2em; */
+/* height: 1.2em; */
+/* } */
+
+.cardDescription {
+    font-size: 0.8rem;
+    /* Adicionado para garantir que a descrição não empurre o título se o card for muito estreito e o título longo */
+    margin-top: 0.5rem; /* Ajuste conforme necessário */
+}

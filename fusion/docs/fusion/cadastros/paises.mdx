@@ -1,0 +1,67 @@
+---
+sidebar_position: 5
+title: Países
+---
+
+import Admonition from '@theme/Admonition';
+
+# Cadastro de Países
+
+O módulo de **Países** permite registrar e manter atualizada a lista de países utilizados em formulários, cadastros de pacientes, integrações e outros contextos do sistema Fusion. Além do nome, é possível configurar siglas, nacionalidades e mapeamentos com sistemas externos.
+
+---
+
+## Acessando o Cadastro de Países
+
+1. Vá até o menu **Cadastros**.
+2. Clique em **Países**.
+
+A tela exibirá a listagem com os seguintes campos:
+
+- **Id**: Identificador único do país.
+- **Sigla**: Abreviação, como “BR” para Brasil.
+- **Nome**: Nome oficial do país.
+- **Nacionalidade**: Ex: Brasileiro, Americano, etc.
+
+![Tela de Listagem de Países](/img/lista_paises.png)
+
+---
+
+## Cadastrando ou Editando um País
+
+Ao clicar em **+ Novo País** ou no botão **Editar**, a tela de manutenção será exibida.
+
+<Admonition type="info" title="Campos disponíveis">
+- **Nome**: Nome do país (ex: Brasil).
+- **Sigla**: Código de duas letras (ex: BR).
+- **Nacionalidade**: Gentílico correspondente (ex: Brasileiro).
+</Admonition>
+
+Além disso, é possível configurar **códigos De/Para**, usados para mapear o país com diferentes sistemas integrados:
+
+- Integrador DF
+- Integração MV
+- Integração Tasy
+- Entre outros
+
+![Tela de Edição de País](/img/edit_paises.png)
+
+---
+
+## Integrações
+
+As abas de **Integrações**, **Códigos de Tabela** e **Aplicações** permitem o mapeamento detalhado conforme as necessidades de interoperabilidade com sistemas externos como MV, Tasy, APIs, etc.
+
+<Admonition type="tip" title="Evite duplicidade">
+Evite cadastrar o mesmo país mais de uma vez. Utilize a busca ou filtros para confirmar antes de criar um novo registro.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações">
+- Utilize nomes e siglas oficiais conforme padrão internacional.
+- Preencha corretamente os códigos de integração.
+- Mantenha o cadastro limpo, evitando duplicações ou nomes genéricos como “1”.
+</Admonition>

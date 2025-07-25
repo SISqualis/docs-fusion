@@ -1,0 +1,60 @@
+---
+sidebar_position: 1
+title: Parcerias
+---
+
+import Admonition from '@theme/Admonition';
+
+# Parcerias
+
+O módulo **Parcerias**, localizado na seção **Contábil**, é utilizado para cadastrar empresas, instituições ou quaisquer outras entidades parceiras que possuam algum tipo de relação contábil ou financeira com a instituição. Este cadastro é fundamental para a correta identificação e mapeamento dessas entidades em integrações com sistemas financeiros e de gestão.
+
+---
+
+## Acessando o Cadastro de Parcerias
+
+1.  No menu lateral, clique em **Contábil**.
+2.  Em seguida, acesse a opção **Parcerias**.
+
+Você verá a tela "Listagem de Parcerias", que exibe todas as parcerias cadastradas.
+
+-   **Filtro de Parcerias**:
+    -   **Id**: Permite buscar pelo identificador único da parceria.
+    -   **Nome**: Permite buscar pelo nome da parceria.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da parceria.
+    -   **Nome**: Nome da entidade parceira (ex: Teste3).
+    -   Cada parceria listada possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Parcerias](/img/lista_partner.png)
+
+---
+
+## Criando ou Editando uma Parceria
+
+Para **adicionar** uma nova parceria, clique no botão **+ Nova Parceria** localizado no canto superior direito da tela de listagem.
+Para **editar** uma parceria existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Parceria" permite configurar o nome da parceria e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro da Parceria">
+-   **Id**: Identificador único da parceria no sistema (ex: 2).
+-   **Nome\***: Campo obrigatório para o nome da parceria (ex: Teste3).
+-   **Códigos de De/Para**: Seção para mapear a parceria com códigos correspondentes em sistemas externos, essencial para a interoperabilidade contábil.
+    -   **Integração**: Nome do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado (ex: 30 para Integração MV, 10 para Integração MV com o HOSPITAL MODELO).
+    -   Os campos podem incluir integrações com sistemas como MV, Tasy, HMED, entre outros.
+
+</Admonition>
+
+![Edição de Parceria](/img/edit_partner.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Parcerias">
+-   **Finalidade do Cadastro**: Utilize este módulo para registrar entidades com as quais existem acordos ou fluxos financeiros, que podem não se encaixar como um simples fornecedor ou cliente.
+-   **Mapeamento Financeiro**: A precisão nos "Códigos de De/Para" é crucial para garantir que as transações e os registros contábeis sejam corretamente associados à parceria nos sistemas integrados.
+-   **Nomenclatura Oficial**: Use os nomes ou razões sociais oficiais das entidades parceiras para evitar duplicidade e garantir a clareza dos registros.
+</Admonition>

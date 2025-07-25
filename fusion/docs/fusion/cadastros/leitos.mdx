@@ -1,0 +1,71 @@
+---
+sidebar_position: 34
+title: Leitos
+---
+
+import Admonition from '@theme/Admonition';
+
+# Leitos
+
+O módulo **Leitos** permite o cadastro e a gestão dos leitos hospitalares no sistema Fusion. Essa funcionalidade é crucial para o controle de disponibilidade, alocação de pacientes e para integrações com outros sistemas hospitalares, garantindo que as informações sobre os leitos estejam sempre atualizadas e corretas.
+
+---
+
+## Acessando o Cadastro de Leitos
+
+1.  No menu lateral, clique em **Cadastros** (inferido, conforme o padrão do sistema).
+2.  Em seguida, acesse a opção **Leitos**.
+
+Você verá uma tela com a listagem dos leitos já cadastrados e opções de filtro. A tela de listagem apresenta os seguintes campos e informações:
+
+-   **Filtro de Leito**:
+    -   **Id**: Permite filtrar pelo identificador único do leito.
+    -   **Nome**: Permite filtrar pelo nome/descrição do leito.
+-   **Totais**:
+    -   **Total Geral**: Número total de leitos cadastrados.
+    -   **Total Disponível**: Número total de leitos disponíveis.
+    -   **Total Ocupado**: Número total de leitos ocupados.
+    -   **Total Inativo**: Número total de leitos inativos.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do leito.
+    -   **Nome**: Nome ou descrição do leito (ex: Leito 101-A, UTI Leito 5).
+    -   **Tipo de Local**: Categoria ou setor onde o leito está localizado.
+
+![Listagem de Leitos](/img/lista_leitos.png)
+
+---
+
+## Criando ou Editando um Leito
+
+Para **adicionar** um novo leito, clique em **+ Novo Leito** no canto superior direito da tela de listagem.
+Para **editar** um leito existente, localize-o na listagem e clique no botão de edição correspondente (geralmente um ícone de lápis ou um botão "Editar" na linha do registro).
+
+A tela de "Manutenção Leito" apresentará os seguintes campos para preenchimento:
+
+<Admonition type="info" title="Campos de Cadastro do Leito">
+-   **Nome\***: Campo obrigatório que define o nome ou identificação do leito.
+-   **Códigos de De/Para**: Esta seção é utilizada para mapear o leito com códigos correspondentes em sistemas externos integrados. Isso é essencial para a interoperabilidade e a correta sincronização de dados entre o Fusion e outros sistemas.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código do leito no respectivo sistema integrado.
+    -   Campos específicos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+        -   Outra integração
+</Admonition>
+
+![Edição de Leito](/img/edit_leitos.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Leitos">
+-   **Nomenclatura Padronizada**: Utilize um padrão claro e consistente para nomear os leitos (ex: ALA-QUARTO-LEITO, UTI-L01). Isso facilita a busca e a identificação.
+-   **Mapeamento Correto**: Certifique-se de que os códigos de De/Para estão corretamente preenchidos e atualizados. Erros no mapeamento podem levar a inconsistências de dados entre os sistemas.
+-   **Atualização Contínua**: Mantenha o cadastro de leitos sempre atualizado, refletindo qualquer mudança física ou de configuração no ambiente hospitalar.
+-   **Status do Leito**: Embora não visível na tela de edição, o status do leito (Disponível, Ocupado, Inativo) é uma informação crítica gerenciada pelo sistema, muitas vezes impactada por movimentações de pacientes e configurações aqui realizadas.
+</Admonition>

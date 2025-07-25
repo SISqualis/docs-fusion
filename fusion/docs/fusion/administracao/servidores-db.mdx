@@ -1,0 +1,49 @@
+---
+sidebar_position: 11
+---
+
+import Admonition from '@theme/Admonition';
+import { Database, Settings, Hospital, Link } from 'lucide-react'; // Ícones ilustrativos
+
+# Servidores de Banco de Dados
+
+A capacidade do Fusion de se conectar e interagir com diversas fontes de dados é crucial para sua funcionalidade, especialmente em ambientes hospitalares complexos. A seção de configuração de Servidores de Banco de Dados permite o cadastramento e gerenciamento das conexões com os bancos de dados utilizados pelo cliente e por sistemas integrados.
+
+<Admonition type="info" title="Objetivo da Configuração" icon={<Database />}>
+  <p>
+    Nesta área do sistema, são registradas as informações essenciais sobre os bancos de dados com os quais o Fusion irá interagir. Isso inclui "Informações do tipo de banco de dados, qual o sistema de gestão hospitalar que o cliente utiliza, assim como o cadastramento dos dados de conexão do DB". Uma configuração precisa é vital para garantir a correta comunicação e troca de dados.
+  </p>
+</Admonition>
+
+## Detalhes da Configuração da Conexão
+
+Para estabelecer uma conexão bem-sucedida, diversos parâmetros precisam ser informados:
+
+* **Tipo de Banco de Dados:** Especificar qual sistema de gerenciamento de banco de dados (SGBD) está sendo utilizado (ex: SQL Server, Oracle, PostgreSQL, MySQL, etc.).
+* **Sistema de Gestão Hospitalar (SGH):** Identificar o sistema de gestão hospitalar (HIS - Hospital Information System) que o cliente utiliza, pois muitos dados relevantes para o Fusion podem residir no banco de dados deste sistema.
+* **Dados de Conexão do DB:** Cadastrar as informações técnicas necessárias para estabelecer a conexão, tais como:
+    * Endereço do servidor (host)
+    * Nome da instância ou do banco de dados
+    * Porta de comunicação
+    * Credenciais de acesso (usuário e senha), quando aplicável e de forma segura.
+
+A imagem a seguir ilustra a interface onde essas configurações são realizadas no Fusion:
+
+<img src="/doc/img/11_lista_servidores.png" alt="Tela de Lista de Servidores de Banco de Dados no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface para cadastramento de informações e dados de conexão de bancos de dados.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Integração com Sistemas Legados" icon={<Hospital />}>
+  <p>
+    Essa configuração é particularmente importante para integrar o Fusion com sistemas de gestão hospitalar (SGH/HIS) já existentes na instituição, permitindo que o Fusion acesse e utilize dados clínicos, cadastrais e operacionais relevantes armazenados nesses sistemas.
+  </p>
+</Admonition>
+
+<Admonition type="warning" title="Precisão e Segurança dos Dados de Conexão" icon={<Settings />}>
+  <p>
+    É fundamental que os dados de conexão sejam inseridos com extrema precisão para evitar falhas de comunicação. Além disso, as credenciais de acesso aos bancos de dados devem ser tratadas com o mais alto nível de segurança, utilizando práticas recomendadas para armazenamento e transmissão segura, se aplicável.
+  </p>
+</Admonition>
+
+A correta configuração dos servidores de banco de dados no Fusion é um pré-requisito para a integração de dados e para o funcionamento adequado de diversas funcionalidades que dependem do acesso a informações externas ou legadas.

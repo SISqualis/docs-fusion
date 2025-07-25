@@ -1,0 +1,72 @@
+---
+sidebar_position: 36
+title: Tabelas
+---
+
+import Admonition from '@theme/Admonition';
+
+# Tabelas
+
+O módulo **Tabelas** no sistema Fusion é uma área de cadastro genérica e flexível, projetada para gerenciar diversas tabelas de domínio e parametrização utilizadas em diferentes partes do sistema e em integrações. Exemplos incluem tabelas de Classificação Internacional de Doenças (CID), tipos de procedimento (TUSS), motivos de alta, tipos de equipe, entre outras. Manter essas tabelas atualizadas e corretamente mapeadas é crucial para a consistência dos dados e o bom funcionamento das integrações.
+
+---
+
+## Acessando o Cadastro de Tabelas
+
+1.  No menu lateral, navegue até a seção principal de cadastros.
+2.  Clique na opção **Tabelas**.
+
+Você será direcionado para a tela "Listagem de Tabelas", que exibe as tabelas já configuradas no sistema e permite a filtragem para facilitar a busca:
+
+-   **Filtro de Tabela**:
+    -   **Id**: Permite buscar pelo identificador único da tabela.
+    -   **Nome**: Permite buscar pelo nome da tabela (ex: Teste Tabela Equipe, Procedimentos SUS).
+    -   **Código**: Permite buscar pelo código associado à tabela (ex: TST, SUS).
+    -   **Tipo de Tabela**: Permite buscar pelo tipo ou categoria da tabela (ex: Identificação de Equipes de Saúde, Tabela Genérica de Termos).
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da tabela.
+    -   **Nome**: Nome descritivo da tabela.
+    -   **Código**: Código mnemônico ou principal da tabela.
+    -   **Tipo de Tabela**: Descrição da finalidade ou categoria da tabela.
+    -   Cada tabela listada possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Tabelas](/img/lista_tabelas.png)
+
+---
+
+## Criando ou Editando uma Tabela
+
+Para **adicionar** uma nova tabela, clique no botão **+ Nova Tabela** localizado no canto superior direito da tela de listagem.
+Para **editar** uma tabela existente, utilize o botão **Editar** ao lado da tabela desejada na listagem.
+
+A tela de "Manutenção Tabela" permite configurar os detalhes da tabela e seus mapeamentos para integração:
+
+<Admonition type="info" title="Campos de Cadastro da Tabela">
+-   **Id**: Identificador único da tabela no sistema Fusion (geralmente atribuído automaticamente).
+-   **Nome\***: Campo obrigatório para o nome descritivo da tabela (ex: CID).
+-   **Código\***: Campo obrigatório para um código curto ou sigla para a tabela (ex: CID).
+-   **Tipo de Tabela**: Campo de seleção que define a categoria ou finalidade da tabela (ex: Identificação de Doenças).
+-   **Códigos de De/Para**: Seção fundamental para a interoperabilidade, permitindo o mapeamento dos itens desta tabela (ou da tabela como um todo) com códigos correspondentes em sistemas externos.
+    -   **Integração**: Nome do sistema integrado.
+    -   **Código**: Código da tabela ou de seus itens no sistema integrado correspondente.
+    -   Exemplos de campos de integração incluem:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+</Admonition>
+
+![Edição de Tabela](/img/edit_tabelas.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Gerenciamento de Tabelas">
+-   **Clareza nos Nomes e Códigos**: Utilize nomes e códigos que sejam claros e facilmente identificáveis quanto ao propósito da tabela.
+-   **Tipos de Tabela Consistentes**: Defina e utilize os "Tipos de Tabela" de forma padronizada para facilitar a organização e busca.
+-   **Mapeamento Cuidadoso**: Os "Códigos de De/Para" são vitais para integrações. Garanta que os mapeamentos estejam corretos e sejam revisados periodicamente, especialmente ao atualizar versões de sistemas integrados ou padrões (como TUSS, CID).
+-   **Evite Redundância**: Antes de criar uma nova tabela, verifique se já não existe uma tabela que atenda à mesma finalidade para evitar redundância de dados e configurações.
+-   **Documentação**: Para tabelas mais complexas ou críticas, considere manter uma documentação externa sobre sua finalidade, origem dos dados e regras de preenchimento.
+</Admonition>

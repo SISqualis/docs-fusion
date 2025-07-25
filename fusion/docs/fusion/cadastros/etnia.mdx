@@ -1,0 +1,62 @@
+---
+sidebar_position: 57
+title: Etnia
+---
+
+import Admonition from '@theme/Admonition';
+
+# Etnia
+
+O módulo **Etnia** é utilizado para cadastrar as etnias dos pacientes, complementando a informação de "Raça/Cor". Este cadastro é particularmente importante para o registro de populações específicas, como povos indígenas e comunidades quilombolas, sendo um dado crucial para políticas de saúde pública, estudos epidemiológicos e para a adequação do cuidado às especificidades culturais.
+
+---
+
+## Acessando o Cadastro de Etnia
+
+1.  No menu lateral, localize e clique na opção **Etnias**.
+
+Você será direcionado para a tela "Listagem de Etnia", que exibe todas as etnias cadastradas.
+
+-   **Filtro de Etnia**:
+    -   **Id**: Permite buscar pelo identificador único da etnia.
+    -   **Nome**: Permite buscar pelo nome da etnia.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da etnia.
+    -   **Nome**: Nome da etnia (ex: Afrodescendentes).
+    -   Cada etnia listada possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Etnia](/img/lista_etnia.png)
+
+---
+
+## Criando ou Editando uma Etnia
+
+Para **adicionar** uma nova etnia, clique no botão **+ Nova Etnia** localizado no canto superior direito da tela de listagem.
+Para **editar** uma etnia existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Etnias" permite configurar o nome da etnia e seus mapeamentos de integração.
+
+<Admonition type="info" title="Campos de Cadastro da Etnia">
+-   **Id**: Identificador único da etnia no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da etnia (ex: Afrodescendentes).
+-   **Códigos de De/Para**: Seção para mapear a etnia com códigos correspondentes em sistemas externos. A sub-seção pode ter colunas como "Integrações" e "Aplicações".
+    -   **Integrador DF**: Campo para código de integração específico (ex: P).
+    -   **Integração MV**: Campo para código de integração com o sistema MV.
+    -   **Integração MV com o HOSPITAL MODELO**: Campo para código de integração específico.
+    -   **Integração MV sem SENDING APPLICATION**: Campo para código de integração específico.
+    -   **Integração Tasy**: Campo para código de integração com o sistema Tasy.
+
+</Admonition>
+
+![Edição de Etnia](/img/edit_etnia.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Etnia">
+-   **Padrões Oficiais**: Para o cadastro de etnias indígenas, utilize os códigos e nomes fornecidos pela FUNAI/SASI-SUS para garantir a conformidade e a correta identificação.
+-   **Dado Autodeclarado**: Assim como raça/cor, a etnia é uma informação autodeclarada. Garanta que os fluxos de trabalho da instituição respeitem a declaração do paciente.
+-   **Mapeamento para Saúde Indígena**: O correto mapeamento dos códigos de De/Para é especialmente crítico para a integração com sistemas da Saúde Indígena (SASI-SUS).
+-   **Sensibilidade Cultural**: Treine as equipes de atendimento sobre a importância e a sensibilidade de coletar corretamente este dado.
+</Admonition>

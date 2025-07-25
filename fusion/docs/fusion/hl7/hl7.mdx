@@ -1,0 +1,111 @@
+---
+sidebar_position: 12
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+# Gerenciamento HL7
+
+<Admonition type="info" title="O que é HL7 e sua importância no Fusion?">
+HL7 (Health Level Seven) é um padrão internacional para a troca de dados de saúde entre sistemas. No Fusion, ele permite integrar diferentes sistemas de forma padronizada. O gerenciamento correto das versões HL7 é fundamental para garantir a interoperabilidade.
+</Admonition>
+
+## Acessando o Módulo HL7
+
+1. No menu lateral, clique em **HL7**.
+2. Selecione a opção **Versions**.
+
+### Tela de Versões HL7
+
+<Admonition type="tip" title="Cadastro e Gerenciamento de Versões HL7">
+Nessa tela você pode cadastrar, editar ou excluir versões HL7 para utilizar nas integrações do sistema Fusion. As colunas principais são:
+
+- **Id**: Identificador único da versão.
+- **Código**: Ex: "2.7", "2.4".
+- **Nome**: Descritivo da versão, ex: "HL7 v2.7".
+
+Clique no botão **+ Adicionar Versão** para cadastrar uma nova.
+
+</Admonition>
+
+<Tabs>
+  <TabItem value="versoes-hl7" label="Versões HL7" default>
+    ![Tela de Versões HL7](/img/versoes_hl7.png)
+  </TabItem>
+</Tabs>
+
+---
+
+## Tipos HL7
+
+### Acessando Tipos HL7
+
+1. No menu lateral, clique em **HL7 > Data Types**.
+
+### Listagem de Tipos
+
+Você verá uma lista com colunas de código, nome e ações. Clique em **Editar** para modificar ou em **+ Novo Tipo** para adicionar um novo.
+
+<Tabs>
+  <TabItem value="data-types" label="Tipos HL7" default>
+    ![Tela de Tipos HL7](/img/data_types.png)
+  </TabItem>
+
+    <TabItem value="novo-data-types" label="Adicionar Tipo HL7" default>
+    ### Cadastro de Novo Tipo
+
+<Admonition type="info" title="Campos do formulário de novo tipo HL7">
+- **Código**: Identificação do tipo (ex: ST, NM).
+- **Versão**: Versão HL7 relacionada.
+- **Nome**: Descrição curta.
+- **Descrição**: Explicação detalhada.
+- **Composição**: Campos que compõem o tipo.
+
+Clique em **+ Adicionar Composição** para incluir elementos e depois em **Salvar**.
+</Admonition>
+    ![Tela de Tipos HL7](/img/novo_tipo-data_types.png)
+  </TabItem>
+
+    <TabItem value="edit-data-types" label="Editar Tipo HL7" default>
+    ![Tela de Tipos HL7](/img/editar_tipo_data_types.png)
+  </TabItem>
+
+</Tabs>
+
+---
+
+## Segmentos HL7
+
+<Tabs>
+  <TabItem value="segments" label="Segmentos HL7" default>
+    ![Tela de Segmentos HL7](/img/tela_segments.png)
+  </TabItem>
+</Tabs>
+
+### Cadastro de Segmentos
+
+1. No menu lateral, clique em **HL7 > Segments**.
+2. Clique em **Novo Segmento**.
+
+<Admonition type="info" title="Campos do formulário de novo segmento HL7">
+- **Código**: Ex: PID, MSH.
+- **Versão**: Relacione com a versão HL7 correta.
+- **Nome** e **Descrição**: Dados explicativos.
+- **Cabeçalho**: Marque se o segmento é de cabeçalho.
+- **Composição**: Adicione os tipos que formarão esse segmento.
+</Admonition>
+
+![Cadastro de Segmento HL7](/img/adicionar_segmento.png)
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Boas Práticas e Conclusão">
+- Cadastre somente versões que realmente serão utilizadas.
+- Relacione corretamente tipos e segmentos com suas versões HL7.
+- Documente qualquer alteração para manter rastreabilidade.
+- Sempre teste as integrações após atualização de versão ou tipo HL7.
+</Admonition>

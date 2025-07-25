@@ -1,0 +1,65 @@
+---
+sidebar_position: 49
+title: Motivo de Atendimento
+---
+
+import Admonition from '@theme/Admonition';
+
+# Motivo de Atendimento
+
+O módulo **Motivo de Atendimento** é utilizado para cadastrar as diversas razões ou tipos de visitas que levam um paciente a procurar atendimento na instituição. Exemplos comuns incluem "Primeira Consulta", "Retorno", "Urgência/Emergência", "Acompanhamento". Este cadastro é importante para fins de agendamento, estatísticas, faturamento e para a correta classificação do encontro do paciente no sistema.
+
+---
+
+## Acessando o Cadastro de Motivo de Atendimento
+
+1.  No menu lateral, localize e clique na opção **Motivo de Atendimento**.
+
+Você será direcionado para a tela "Listagem de Motivo de Atendimentos", que exibe todos os motivos cadastrados.
+
+-   **Filtro de Motivo de Atendimento**:
+    -   **Id**: Permite buscar pelo identificador único do motivo.
+    -   **Nome**: Permite buscar pelo nome do motivo.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do motivo.
+    -   **Nome**: Nome do motivo do atendimento (ex: Motivo Atendimento Teste).
+    -   Cada motivo listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Motivos de Atendimento](/img/lista_mtv_atd.png)
+
+---
+
+## Criando ou Editando um Motivo de Atendimento
+
+Para **adicionar** um novo motivo, clique no botão **+ Novo Motivo de Atendimento** localizado no canto superior direito da tela de listagem.
+Para **editar** um motivo existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Motivo de Atendimento" permite configurar os detalhes e mapeamentos do motivo:
+
+<Admonition type="info" title="Campos de Cadastro do Motivo de Atendimento">
+-   **Id**: Identificador único do motivo no sistema (geralmente não editável).
+-   **Nome\***: Campo obrigatório para o nome do motivo do atendimento.
+-   **Ativo**: Caixa de seleção para indicar se o motivo de atendimento está ativo e pode ser utilizado no sistema.
+-   **Abas de Configuração**:
+    -   **Códigos de De/Para**: Permite mapear o motivo de atendimento com códigos de sistemas externos para garantir a interoperabilidade. Os campos de integração podem incluir:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+    -   **Códigos Tabela**: (Inferido) Permite mapear o motivo com códigos de tabelas internas do sistema.
+
+</Admonition>
+
+![Edição de Motivo de Atendimento](/img/edit_mtv_atd.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Motivos de Atendimento">
+-   **Seja Específico, Mas Conciso**: Crie motivos que sejam claros e representem as principais portas de entrada ou tipos de visita da sua instituição.
+-   **Status Ativo/Inativo**: Utilize o campo "Ativo" para gerenciar o ciclo de vida dos motivos. Em vez de excluir um motivo que já foi usado, o ideal é inativá-lo para preservar o histórico.
+-   **Mapeamento para Faturamento**: O mapeamento correto dos motivos de atendimento é frequentemente um requisito para o faturamento correto dos serviços junto às operadoras de saúde.
+-   **Consistência**: Garanta que os motivos de atendimento sejam utilizados de forma consistente em todos os pontos de agendamento e registro de pacientes.
+</Admonition>

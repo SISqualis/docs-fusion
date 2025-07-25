@@ -1,0 +1,60 @@
+---
+sidebar_position: 3
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { Link, Share2, FileJson, Settings2, PlusCircle } from 'lucide-react'; // Ícones ilustrativos, adicionei PlusCircle
+
+# Integrações
+
+A capacidade de integração do Fusion é fundamental para conectar o sistema a diversas fontes de dados e outros softwares, garantindo um fluxo de informações coeso e eficiente. Esta seção detalha como cadastrar e configurar as integrações.
+
+<Admonition type="info" title="Visão Geral da Integração" icon={<Link />}>
+  <p>
+    O módulo de integração do Fusion permite o cadastro, a configuração e o monitoramento de todas as interconexões com sistemas externos. Ele oferece ferramentas para definir os parâmetros de comunicação, os formatos de dados (layouts) e visualizar logs de transação, essenciais para a interoperabilidade em saúde.
+  </p>
+</Admonition>
+
+## Detalhes da Configuração de Integração
+
+Explore as etapas e opções para estabelecer e gerenciar as integrações no sistema:
+
+<Tabs>
+  <TabItem value="cadastro" label="Cadastro e Logs de Integração" icon={<Share2 />} default>
+    <h4>Listagem e Criação de Integrações</h4>
+    <p>
+      A área de integrações exibe uma listagem das configurações existentes, onde é possível também acessar os <strong>Logs de APIs</strong>. Esta funcionalidade é crucial para o monitoramento de transações e diagnóstico de eventuais problemas.
+    </p>
+    <img src="/doc/img/4_integracao.png" alt="Tela de listagem de Integrações e acesso a Logs de API" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '600px', display: 'block', marginLeft: 'auto', marginRight: 'auto', marginTop: '16px', marginBottom: '16px'}} />
+    <figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px', marginBottom: '24px'}}>Interface de listagem de integrações e acesso a logs.</figcaption>
+
+    <Admonition type="note" icon={<PlusCircle />} title="Nova Integração">
+      <p>
+        Ao selecionar a opção para criar uma <strong>Nova Integração</strong> (ou editar uma existente), o usuário é direcionado para a tela de <strong>Manutenção de Integração</strong>. Nesta tela, é possível definir:
+      </p>
+      <ul>
+        <li><strong>Código:</strong> Um identificador único para a integração.</li>
+        <li><strong>Nome:</strong> Um nome descritivo para a integração.</li>
+        <li><strong>Descrição:</strong> Detalhes adicionais sobre a finalidade da integração.</li>
+        <li><strong>Opções Comportamentais:</strong> Como "Permite Pesquisa Ativa de Paciente?" e "Exibir no Visualizador?".</li>
+      </ul>
+      <p>
+        Além disso, esta tela organiza em abas a configuração de <strong>Layouts</strong>, <strong>APIs</strong> e <strong>Barramentos</strong>, permitindo, por exemplo, adicionar e configurar os layouts de dados específicos para a troca de informações.
+      </p>
+    </Admonition>
+    <img src="/doc/img/nova_integracao.png" alt="Tela de Manutenção de Integração para Nova Integração" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+    <figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Tela "Manutenção de Integração" para configuração detalhada.</figcaption>
+  </TabItem>
+</Tabs>
+
+<br/>
+
+<Admonition type="tip" title="Flexibilidade e Padronização" icon={<Settings2 />}>
+  <p>
+    A combinação do suporte a múltiplos métodos de integração (Layouts, APIs, Barramento) com a adesão a padrões de dados como FHIR, HL7 e OpenEHR, confere ao Fusion grande flexibilidade e capacidade de interoperar com um vasto ecossistema de sistemas de saúde.
+  </p>
+</Admonition>
+
+A configuração adequada das integrações e seus layouts é essencial para assegurar a troca de informações precisa e confiável entre o Fusion e outros sistemas.

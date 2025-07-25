@@ -1,0 +1,66 @@
+---
+sidebar_position: 54
+title: Profissionais
+---
+
+import Admonition from '@theme/Admonition';
+
+# Profissionais
+
+O módulo **Profissionais** é utilizado para o cadastro e gerenciamento de todos os profissionais de saúde que atuam na instituição ou que são referenciados em atendimentos. Manter um cadastro completo e preciso é fundamental para agendamentos, atribuição de responsabilidades, registros de autoria em prontuários, faturamento e integrações com outros sistemas.
+
+---
+
+## Acessando o Cadastro de Profissionais
+
+1.  No menu lateral, localize e clique na opção **Profissionais**.
+
+Você será direcionado para a tela "Listagem de Profissionais", que exibe todos os profissionais cadastrados.
+
+-   **Filtro de Profissional**: Permite buscar os profissionais por Id, Nome, Tipo Profissional ou Tipo de Conselho Profissional.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do profissional.
+    -   **Nome**: Nome do profissional.
+    -   **Tipo Profissional**: Categoria do profissional (ex: Médico).
+    -   **Tipo Conselho Profissional**: Conselho de classe ao qual o profissional pertence (ex: Conselho Regional Teste).
+    -   Cada profissional listado possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Profissionais](/img/lista_pro.png)
+
+---
+
+## Criando ou Editando um Profissional
+
+Para **adicionar** um novo profissional, clique no botão **+ Novo Profissional** localizado no canto superior direito da tela de listagem.
+Para **editar** um profissional existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Profissional" permite configurar todos os dados cadastrais, documentais e de integração do profissional.
+
+<Admonition type="info" title="Campos de Cadastro do Profissional">
+-   **Nome\***: Campo obrigatório para o nome completo do profissional.
+-   **Tipo de Profissional\***: Campo de seleção obrigatório para a categoria do profissional (ex: Médico).
+-   **Gênero**: Campo de seleção para o gênero do profissional.
+-   **Conselho Profissional**: Identificação do conselho de classe (ex: Conselho Regional Teste(CRM-RS)).
+-   **Número Conselho**: Número de registro do profissional no seu conselho.
+-   **Classificação Ocupação**: Classificação da ocupação do profissional.
+-   **Data Nascimento\***: Campo obrigatório para a data de nascimento.
+-   **Abas de Configuração**:
+    -   **Códigos de De/Para**: Permite mapear o profissional com códigos de sistemas externos para interoperabilidade.
+    -   **Documentos**: (Inferido) Seção para cadastrar os documentos do profissional.
+    -   **Especialidades**: (Inferido) Seção para associar as especialidades do profissional.
+    -   **Endereços**: (Inferido) Seção para cadastrar os dados de endereço do profissional.
+
+</Admonition>
+
+![Edição de Profissional](/img/edit_pro.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Profissionais">
+-   **Dados do Conselho**: A precisão do número do conselho profissional e da UF correspondente é crucial para a validação legal dos atos do profissional, como prescrições e laudos.
+-   **Documentação Completa**: Utilize a aba "Documentos" para manter cópias digitalizadas de documentos importantes, como identidade profissional e comprovantes.
+-   **Especialidades**: Manter as especialidades atualizadas é fundamental para sistemas de agendamento e para a correta alocação de tarefas.
+-   **Mapeamento De/Para**: O mapeamento de integração é vital para que o profissional seja corretamente identificado em todos os sistemas integrados da instituição.
+</Admonition>

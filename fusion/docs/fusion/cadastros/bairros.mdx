@@ -1,0 +1,64 @@
+---
+sidebar_position: 8
+title: Bairros
+---
+
+import Admonition from '@theme/Admonition';
+
+# Cadastro de Bairros
+
+O módulo de **Bairros** permite organizar a divisão territorial das cidades cadastradas no Fusion. Esse recurso é importante para garantir maior precisão nos registros de endereço e para integração com sistemas externos que utilizam essa estrutura.
+
+---
+
+## Acessando o Cadastro de Bairros
+
+1. Acesse o menu lateral **Cadastros**.
+2. Clique em **Bairros**.
+
+A listagem exibe os seguintes campos:
+
+- **Id**
+- **País**
+- **Estado**
+- **Cidade**
+- **Nome** do bairro
+
+![Tela de Listagem de Bairros](/img/lista_bairros.png)
+
+---
+
+## Criando ou Editando um Bairro
+
+Para adicionar um novo bairro, clique em **+ Novo Bairro**.  
+Para editar, utilize o botão **Editar** correspondente.
+
+<Admonition type="info" title="Campos obrigatórios">
+- **Nome**: Nome do bairro (ex: Centro, Derby, Vale dos Vinhedos)
+- **País**: Deve ser selecionado conforme cadastro existente
+- **Estado**: Dependente do país escolhido
+- **Cidade**: Vínculo obrigatório para localização geográfica correta
+</Admonition>
+
+![Tela de Edição de Bairro](/img/edit_bairros.png)
+
+---
+
+## Códigos de Integração (De/Para)
+
+O sistema permite a configuração de códigos de mapeamento com plataformas externas para facilitar a integração entre sistemas legados, ERPs e plataformas públicas ou privadas.
+
+<Admonition type="tip" title="Dica técnica">
+Verifique junto ao time de integração quais códigos externos devem ser usados. Preencha apenas se o bairro for relevante nas trocas com sistemas externos.
+</Admonition>
+
+---
+
+## Boas Práticas
+
+<Admonition type="success" title="Recomendações">
+- Cadastre bairros com a grafia correta e completa.
+- Evite registros como "teste", "123" ou nomes genéricos.
+- Use os filtros para evitar duplicidade antes de adicionar novos bairros.
+- Mantenha alinhamento com o cadastro de cidades, estados e países.
+</Admonition>

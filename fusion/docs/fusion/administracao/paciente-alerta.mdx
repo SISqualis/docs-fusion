@@ -1,0 +1,40 @@
+---
+sidebar_position: 14
+---
+
+import Admonition from '@theme/Admonition';
+import { AlertTriangle, ListFilter, Stethoscope, UsersRound } from 'lucide-react'; // Ícones ilustrativos
+
+# Pacientes por Alerta
+
+Complementando as funcionalidades de gerenciamento de alertas e grupos de alertas, o Fusion oferece uma visão direta dos pacientes impactados através da tela "Paciente Alerta". Esta seção é crucial para direcionar a atenção e as ações da equipe de saúde para os indivíduos que necessitam de acompanhamento devido a condições específicas sinalizadas pelo sistema.
+
+<Admonition type="info" title="O Que é a Lista de Pacientes por Alerta?" icon={<AlertTriangle />}>
+  A funcionalidade "Paciente Alerta" exibe uma "Lista de pacientes por alerta". Isso significa que o sistema correlaciona os alertas parametrizados e disparados com os pacientes aos quais esses alertas se referem, apresentando uma listagem focada nos indivíduos.
+</Admonition>
+
+## Importância da Visão Centrada no Paciente
+
+Ter uma lista de pacientes associada a alertas específicos é fundamental para:
+
+* **Intervenção Rápida e Direcionada:** Permite que as equipes de saúde identifiquem rapidamente quais pacientes estão em situações que exigem atenção imediata (ex: resultado de exame crítico, risco de interação medicamentosa).
+* **Acompanhamento Proativo:** Facilita o monitoramento de pacientes que se enquadram em critérios de alerta específicos, mesmo que não necessitem de uma intervenção emergencial.
+* **Gestão de Risco Clínico:** Ajuda na identificação de pacientes em risco, permitindo a implementação de medidas preventivas.
+* **Priorização de Cuidados:** Auxilia na priorização de atendimentos e na alocação de recursos com base na criticidade dos alertas associados aos pacientes.
+
+A imagem abaixo ilustra a interface onde a lista de pacientes por alerta é apresentada no Fusion:
+
+<img src="/doc/img/14_lista_pacient_alerta.png" alt="Tela de Lista de Pacientes por Alerta no Fusion" style={{borderRadius: '8px', border: '1px solid #ccc', maxWidth: '100%', marginTop: '16px'}} />
+<figcaption style={{textAlign: 'center', fontSize: '0.9em', color: '#666', marginTop: '4px'}}>Interface exibindo a lista de pacientes associados a alertas específicos.</figcaption>
+
+<br/>
+
+<Admonition type="tip" title="Filtros e Contextualização" icon={<ListFilter />}>
+  É provável que esta tela permita filtrar os pacientes por tipo de alerta, grupo de alerta, período ou outras informações contextuais. Isso torna a análise mais eficiente, permitindo que as equipes foquem nos pacientes relevantes para cada situação.
+</Admonition>
+
+<Admonition type="note" title="Elo entre Alertas e Cuidado ao Paciente" icon={<Stethoscope />}>
+  A lista de "Paciente Alerta" é o elo prático entre o sistema de monitoramento de eventos (Alertas e Grupos de Alertas) e a prestação de cuidados diretos ao paciente. Ela traduz as notificações do sistema em uma lista de indivíduos que precisam de atenção, facilitando uma resposta clínica mais ágil e informada.
+</Admonition>
+
+A funcionalidade de listar pacientes por alerta no Fusion é uma ferramenta essencial para operacionalizar o sistema de alertas, garantindo que as informações geradas se convertam em ações efetivas em prol da segurança e da qualidade do cuidado ao paciente.

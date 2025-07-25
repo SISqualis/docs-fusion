@@ -1,0 +1,57 @@
+---
+sidebar_position: 19
+---
+
+import Admonition from '@theme/Admonition';
+import { UserPlus, FileInput, ListChecks, DatabaseZap, ShieldQuestion } from 'lucide-react'; // Ícones ilustrativos
+
+# Importação de Pacientes
+
+A importação de dados de pacientes é uma tarefa crítica em diversas situações, como a migração de um sistema legado, a integração de dados de uma nova unidade de saúde ou o carregamento de listas de pacientes de fontes externas. O Fusion pode oferecer uma funcionalidade de "Solicitação de Importação de Pacientes" para gerenciar esse processo de forma controlada e organizada.
+
+<Admonition type="info" title="O Que é a Solicitação de Importação de Pacientes?" icon={<UserPlus />}>
+  A "Solicitação de Importação de Pacientes" é um processo ou módulo dentro do Fusion que permite aos usuários autorizados requisitarem e acompanharem a importação em lote de dados de pacientes para o sistema. Este mecanismo visa garantir que as importações sejam realizadas de maneira padronizada, segura e com a devida rastreabilidade.
+</Admonition>
+
+## Processo e Componentes de uma Solicitação de Importação
+
+Um sistema de solicitação de importação de pacientes geralmente envolve várias etapas e considerações:
+
+* **Definição da Fonte de Dados:** Especificar a origem dos dados dos pacientes (ex: arquivo CSV, planilhas, conexão com outro banco de dados, serviço de API).
+* **Formato e Mapeamento dos Dados:** Definir o layout esperado dos dados de origem e como cada campo será mapeado para os campos correspondentes no banco de dados do Fusion (ex: nome, data de nascimento, CPF, CNS, endereço).
+* **Validação e Limpeza de Dados:** Implementar verificações para garantir a qualidade e a consistência dos dados a serem importados. Pode envolver regras de validação, tratamento de duplicidades e limpeza de dados inconsistentes.
+* **Agendamento e Execução:** Permitir o agendamento da importação para horários de menor impacto no sistema ou a execução sob demanda.
+* **Aprovação e Acompanhamento:** Em alguns cenários, a solicitação de importação pode passar por um fluxo de aprovação antes da execução. O solicitante deve poder acompanhar o status da importação (ex: pendente, em processamento, concluída com sucesso, concluída com erros).
+* **Logs e Relatórios:** Gerar logs detalhados de cada processo de importação, incluindo o número de registros processados, sucessos, falhas e os motivos dos erros, para fins de auditoria e correção.
+
+<Admonition type="tip" title="Benefícios de um Processo Formalizado" icon={<ListChecks />}>
+  <p>
+    Utilizar um sistema de solicitação para importações de pacientes ajuda a:
+    <ul>
+      <li>Padronizar o processo de importação.</li>
+      <li>Aumentar a qualidade e a consistência dos dados importados.</li>
+      <li>Garantir a segurança e a privacidade das informações durante a transferência.</li>
+      <li>Manter um histórico rastreável de todas as importações realizadas.</li>
+    </ul>
+  </p>
+</Admonition>
+
+<Admonition type="warning" title="Considerações Críticas na Importação" icon={<ShieldQuestion />}>
+  <p>
+    A importação de dados de pacientes é uma operação sensível. É crucial:
+    <ul>
+      <li>Assegurar a conformidade com as leis de proteção de dados (como a LGPD).</li>
+      <li>Realizar testes exaustivos com amostras de dados antes de uma importação em larga escala.</li>
+      <li>Ter um plano de contingência para o caso de falhas ou necessidade de reversão.</li>
+      <li>Garantir que apenas pessoal autorizado tenha permissão para solicitar e executar importações.</li>
+    </ul>
+  </p>
+</Admonition>
+
+<Admonition type="note" title="Interface Visual">
+  <p>
+    Como não foi fornecida uma imagem específica para esta funcionalidade no material de origem, a descrição acima é baseada em funcionalidades comuns de sistemas que gerenciam importação de dados. Uma interface visual para "Solicitação de Importação de Pacientes" tipicamente incluiria formulários para submeter os detalhes da solicitação, opções para anexar arquivos de dados e uma área para visualizar o status e os resultados das importações.
+  </p>
+</Admonition>
+
+Um módulo de "Solicitação de Importação de Pacientes" bem estruturado no Fusion seria uma ferramenta poderosa para garantir que a entrada de grandes volumes de dados de pacientes no sistema seja feita de forma eficiente, segura e controlada.

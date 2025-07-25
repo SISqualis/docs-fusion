@@ -1,0 +1,61 @@
+---
+sidebar_position: 50
+title: Cadastro Instituição
+---
+
+import Admonition from '@theme/Admonition';
+
+# Cadastro Instituição
+
+O módulo **Cadastro Instituição** é utilizado para registrar outras instituições de saúde, como hospitais, clínicas, laboratórios e unidades de saúde, com as quais a sua organização interage. Este cadastro é essencial para o gerenciamento de transferências de pacientes, recebimento de histórico clínico externo, encaminhamentos e outras funcionalidades que dependem da interoperabilidade entre diferentes estabelecimentos de saúde.
+
+---
+
+## Acessando o Cadastro de Instituições
+
+1.  No menu lateral, localize e clique na opção **Cadastro Instituição**.
+
+Você será direcionado para a tela "Listagem de Instituições", que exibe todas as instituições de saúde já cadastradas.
+
+-   **Filtro de Instituição**: Permite buscar as instituições por Id, Nome, Código CNES ou Tipo de Instituição.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único da instituição no sistema.
+    -   **Nome**: Nome da instituição (ex: HCB-HOSPITAL DA CRIANÇA DE BRASILIA).
+    -   **CódigoCnes**: Código da instituição no Cadastro Nacional de Estabelecimentos de Saúde.
+    -   **TipoInstituicao**: Categoria da instituição.
+    -   Cada instituição listada possui um botão **Editar** e um menu de mais opções.
+
+![Listagem de Instituições](/img/lista_cdd_ins.png)
+
+---
+
+## Criando ou Editando uma Instituição
+
+Para **adicionar** uma nova instituição, clique no botão **+ Nova Instituição** localizado no canto superior direito da tela de listagem.
+Para **editar** uma instituição existente, localize-a na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção Instituição" permite configurar todos os detalhes da instituição:
+
+<Admonition type="info" title="Campos de Cadastro da Instituição">
+-   **Id**: Identificador único da instituição no sistema (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome da instituição (ex: Instituto de Teste de Cadastro).
+-   **Código CNES**: Campo para o código da instituição no Cadastro Nacional de Estabelecimentos de Saúde (ex: 232323).
+-   **Abas de Configuração**:
+    -   **De/Paras**: Permite mapear a instituição com códigos de diferentes sistemas externos para garantir a interoperabilidade. Os campos podem incluir integrações com sistemas como MV, Tasy, HMED, e-SUS AB, entre outros.
+    -   **Endereços**: (Inferido) Seção para cadastrar os dados de endereço da instituição.
+    -   **Documentos**: (Inferido) Seção para anexar ou registrar documentos pertinentes à instituição.
+
+</Admonition>
+
+![Edição de Instituição](/img/edit_cdd_ins.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Instituições">
+-   **Código CNES é Fundamental**: O preenchimento correto do Código CNES é crucial, pois ele é o identificador único oficial de estabelecimentos de saúde no Brasil. Isso garante a unicidade do registro e facilita integrações com sistemas governamentais.
+-   **Dados Completos**: Preencha o máximo de informações possível, incluindo endereços e contatos nas abas correspondentes, para criar um diretório de instituições completo e útil.
+-   **Mapeamento De/Para**: Mantenha os códigos de integração na aba "De/Paras" atualizados para garantir que as trocas de informações com outras instituições ocorram sem falhas.
+-   **Padronização**: Ao cadastrar nomes, evite abreviações e use o nome oficial da instituição para facilitar a busca e evitar duplicidade.
+</Admonition>

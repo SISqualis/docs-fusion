@@ -1,0 +1,66 @@
+---
+sidebar_position: 35
+title: Medicamento
+---
+
+import Admonition from '@theme/Admonition';
+
+# Medicamento
+
+O módulo **Medicamento** é utilizado para o cadastro e a gestão de todos os medicamentos utilizados pela instituição no sistema Fusion. Este cadastro é fundamental para a prescrição eletrônica, controle de estoque (quando integrado a sistemas de farmácia), faturamento e para garantir a correta identificação dos medicamentos em integrações com outros sistemas de saúde.
+
+---
+
+## Acessando o Cadastro de Medicamentos
+
+1.  No menu lateral, navegue até a seção principal de cadastros (geralmente "Cadastros").
+2.  Clique na opção **Medicamentos**.
+
+Você será direcionado para a tela de listagem de medicamentos, que exibe os medicamentos já cadastrados e permite filtrar a busca. A tela de listagem contém:
+
+-   **Filtro de Medicamentos**:
+    -   **Id**: Permite buscar pelo código identificador único do medicamento no sistema.
+    -   **Nome**: Permite buscar pelo nome do medicamento.
+    -   **Status**: Permite filtrar medicamentos pelo seu status (ex: Ativo, Inativo).
+-   **Colunas da Listagem**:
+    -   A listagem exibe o **Nome** do medicamento.
+    -   Cada medicamento listado possui um botão **Editar** para modificar suas informações e um menu de mais opções (representado por três pontos verticais).
+
+![Edição de Medicamento](/img/edit_medicamento.png)
+
+---
+
+## Criando ou Editando um Medicamento
+
+Para **adicionar** um novo medicamento, clique no botão **+ Novo Medicamento** localizado no canto superior direito da tela de listagem.
+Para **editar** um medicamento existente, utilize o botão **Editar** ao lado do medicamento desejado na listagem.
+
+A tela de "Manutenção Medicamento" é onde você preencherá ou alterará os detalhes do medicamento:
+
+<Admonition type="info" title="Campos de Cadastro do Medicamento">
+-   **Id**: Identificador único do medicamento no sistema (geralmente preenchido automaticamente ou não editável na edição).
+-   **Nome\***: Campo obrigatório que define o nome completo do medicamento, incluindo dosagem e forma farmacêutica (ex: SORO FISIOLOGICO 0,9% 250ml).
+-   **Códigos de De/Para**: Essencial para a interoperabilidade, esta seção permite mapear o medicamento cadastrado no Fusion com seus respectivos códigos em outros sistemas integrados.
+    -   **Integração**: Identifica o sistema externo para o qual o código se aplica.
+    -   **Código**: O código correspondente do medicamento no sistema integrado.
+    -   Exemplos de campos de integração incluem:
+        -   Integrador DF
+        -   Integração MV
+        -   Integração MV com o HOSPITAL MODELO
+        -   Integração MV sem SENDING APPLICATION
+        -   Integração Tasy
+        -   Api HMED
+</Admonition>
+
+![Listagem de Medicamentos](/img/lista_medicamento.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Medicamentos">
+-   **Padronização de Nomes**: Utilize nomes padronizados para os medicamentos, seguindo preferencialmente tabelas oficiais (ex: Tabela Brasíndice/Simpro, TNUMM/Anvisa) para garantir consistência e facilitar a identificação. Inclua sempre a concentração, forma farmacêutica e volume/quantidade.
+-   **Códigos de De/Para Atualizados**: Mantenha os códigos de mapeamento (De/Para) sempre atualizados. Qualquer alteração ou inclusão de novos sistemas integrados deve ser refletida aqui para evitar falhas de comunicação de dados.
+-   **Evite Duplicidade**: Antes de cadastrar um novo medicamento, verifique se ele já não existe no sistema para evitar duplicidade de registros.
+-   **Atenção aos Detalhes**: Informações como unidade de medida, via de administração, e outras características específicas do medicamento, embora não todas visíveis nos prints, são cruciais e devem ser preenchidas corretamente se presentes em outras abas ou seções do cadastro.
+</Admonition>

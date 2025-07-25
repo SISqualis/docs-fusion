@@ -1,0 +1,65 @@
+---
+sidebar_position: 43
+title: Tipos de Detalhes de Recursos
+---
+
+import Admonition from '@theme/Admonition';
+
+# Tipos de Detalhes de Recursos
+
+O módulo **Tipos de Detalhes de Recursos** no sistema Fusion serve para cadastrar e gerenciar categorias ou tipos de informações específicas que podem ser associadas a um "Recurso" (módulo subsequente). Por exemplo, um recurso "Sala Cirúrgica" pode ter um detalhe do tipo "Anestesia" associado a ele. Este cadastro permite uma parametrização flexível e detalhada dos recursos da instituição e é fundamental para o mapeamento correto em integrações.
+
+---
+
+## Acessando o Cadastro de Tipos de Detalhes de Recursos
+
+1.  No menu lateral, localize e clique na opção **Tipos de Detalhes de Recursos**.
+
+Você será direcionado para a tela "Listagem de Tipos de Detalhes de Recursos". Esta tela exibe os tipos já cadastrados e permite filtrar os resultados:
+
+-   **Filtro de Tipos de Detalhes de Recursos**:
+    -   **Id**: Permite buscar pelo identificador único do tipo.
+    -   **Nome**: Permite buscar pelo nome do tipo.
+-   **Colunas da Listagem**:
+    -   **Id**: Identificador único do tipo.
+    -   **Nome**: Nome do tipo de detalhe do recurso (ex: Anestesia).
+    -   Cada tipo listado possui um botão **Editar** e um menu de mais opções (três pontos verticais).
+
+![Listagem de Tipos de Detalhes de Recursos](/img/lista_det_rec.png)
+
+---
+
+## Criando ou Editando um Tipo de Detalhe de Recurso
+
+Para **adicionar** um novo tipo, clique no botão **+ Novo Tipo** localizado no canto superior direito da tela de listagem.
+Para **editar** um tipo existente, localize-o na listagem e utilize o botão **Editar**.
+
+A tela de "Manutenção de Tipo de Detalhe de Recurso" permite configurar os detalhes do tipo e seus mapeamentos de integração:
+
+<Admonition type="info" title="Campos de Cadastro do Tipo de Detalhe de Recurso">
+-   **Id**: Identificador único do tipo no sistema Fusion (ex: 1).
+-   **Nome\***: Campo obrigatório para o nome do tipo de detalhe do recurso (ex: Anestesia).
+-   **De/Paras**: Seção utilizada para mapear o tipo de detalhe com códigos correspondentes em sistemas e integrações externas.
+    -   **Integração**: Nome ou identificador do sistema integrado.
+    -   **Código**: Código correspondente no sistema integrado.
+    -   Exemplos de campos de integração incluem:
+        -   Amigo App
+        -   Api HMED
+        -   Defensoria Pública Estado do Pará
+        -   Instituição de teste 2
+        -   Integrador DF
+        -   Integração Consulfarma
+</Admonition>
+
+![Edição de Tipo de Detalhe de Recurso](/img/edit_det_rec.png)
+
+---
+
+## Dicas e Cuidados
+
+<Admonition type="tip" title="Boas Práticas no Cadastro de Tipos de Detalhes de Recursos">
+-   **Pense na Estrutura**: Este cadastro serve como um classificador para detalhes de recursos. Pense em como os recursos da sua instituição são agrupados e quais informações adicionais eles necessitam antes de criar os tipos.
+-   **Nomes Descritivos**: Utilize nomes que descrevam claramente qual tipo de informação será detalhada, como "Tipo de Equipamento", "Voltagem", "Requisitos de Instalação", além do exemplo "Anestesia".
+-   **Integração é Chave**: O mapeamento na seção "De/Paras" é crucial se esses detalhes de recursos precisam ser compreendidos por outros sistemas, como um sistema de agendamento ou de patrimônio.
+-   **Revisão Periódica**: Revise os tipos cadastrados para garantir que ainda são relevantes para os recursos existentes e os processos da instituição.
+</Admonition>
