@@ -1,0 +1,2 @@
+Arquivo de teste para disparar o workflow do GitHub Actions
+Data: 2024
