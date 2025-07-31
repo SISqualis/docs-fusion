@@ -1,37 +1,17 @@
 "use strict";
-(self["webpackChunkfusion"] = self["webpackChunkfusion"] || []).push([[4327],{
+(self["webpackChunkfusion"] = self["webpackChunkfusion"] || []).push([[8950],{
 
-/***/ 869:
+/***/ 809:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/login-36031b2f46cd677886efd31ce6163cb6.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/lista_coord-8a150db553d58a5ea92a456f532f3a62.png");
 
 /***/ }),
 
-/***/ 1819:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dados-056b53c489be4d28addc8709a5fa2088.png");
-
-/***/ }),
-
-/***/ 4229:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/pep-bdc9514153bb3a57e0ca5dae3f65545a.png");
-
-/***/ }),
-
-/***/ 4609:
+/***/ 3235:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -43,26 +23,26 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_manuais_pep_mdx_7ea_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_fusion_contabil_coordenadorias_mdx_9bd_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-manuais-pep-mdx-7ea.json
-const site_docs_manuais_pep_mdx_7ea_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"manuais/pep","title":"Acesso ao FUSION via PEP MV","description":"Este documento tem como objetivo demonstrar como acessar os dados de pacientes consolidados no FUSION, a partir do Prontuário Eletrônico do Paciente (PEP) MV. Ele fornece orientações básicas para acesso ao FUSION, garantindo segurança e controle de acesso.","source":"@site/docs/manuais/pep.mdx","sourceDirName":"manuais","slug":"/manuais/pep","permalink":"/docs-fusion/docs/manuais/pep","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Acesso ao FUSION via PEP MV"},"sidebar":"tutorialSidebar","previous":{"title":"Manuais","permalink":"/docs-fusion/docs/category/manuais"},"next":{"title":"Processos de Integração","permalink":"/docs-fusion/docs/manuais/apis"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-fusion-contabil-coordenadorias-mdx-9bd.json
+const site_docs_fusion_contabil_coordenadorias_mdx_9bd_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"fusion/contabil/coordenadorias","title":"Coordenadorias","description":"O módulo Coordenadorias, localizado na seção Contábil, é utilizado para cadastrar os diferentes setores, departamentos ou centros de custo da instituição. Este cadastro é essencial para a organização interna e para a alocação de recursos e despesas nos processos de prestação de contas e em outras rotinas financeiras.","source":"@site/docs/fusion/contabil/coordenadorias.mdx","sourceDirName":"fusion/contabil","slug":"/fusion/contabil/coordenadorias","permalink":"/docs-fusion/docs/fusion/contabil/coordenadorias","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"sidebar_position":4,"title":"Coordenadorias"},"sidebar":"tutorialSidebar","previous":{"title":"Prestação de Contas","permalink":"/docs-fusion/docs/fusion/contabil/prestacao-contas"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(8453);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Admonition/index.js + 15 modules
 var Admonition = __webpack_require__(7293);
-;// ./docs/manuais/pep.mdx
+;// ./docs/fusion/contabil/coordenadorias.mdx
 
 
 const frontMatter = {
-	sidebar_position: 1,
-	title: 'Acesso ao FUSION via PEP MV'
+	sidebar_position: 4,
+	title: 'Coordenadorias'
 };
-const contentTitle = 'Manual de Acesso ao FUSION via PEP MV';
+const contentTitle = 'Coordenadorias';
 
 const assets = {
 
@@ -72,20 +52,16 @@ const assets = {
 
 
 const toc = [{
-  "value": "Acesso ao PEP",
-  "id": "acesso-ao-pep",
+  "value": "Acessando o Cadastro de Coordenadorias",
+  "id": "acessando-o-cadastro-de-coordenadorias",
   "level": 2
 }, {
-  "value": "Carregamento do Perfil",
-  "id": "carregamento-do-perfil",
+  "value": "Criando ou Editando uma Coordenadoria",
+  "id": "criando-ou-editando-uma-coordenadoria",
   "level": 2
 }, {
-  "value": "Acesso ao FUSION no MV",
-  "id": "acesso-ao-fusion-no-mv",
-  "level": 2
-}, {
-  "value": "Consulta de Atendimentos Específicos",
-  "id": "consulta-de-atendimentos-específicos",
+  "value": "Dicas e Cuidados",
+  "id": "dicas-e-cuidados",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -95,98 +71,154 @@ function _createMdxContent(props) {
     header: "header",
     hr: "hr",
     img: "img",
+    li: "li",
+    ol: "ol",
     p: "p",
     strong: "strong",
+    ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.header, {
       children: (0,jsx_runtime.jsx)(_components.h1, {
-        id: "manual-de-acesso-ao-fusion-via-pep-mv",
-        children: "Manual de Acesso ao FUSION via PEP MV"
+        id: "coordenadorias",
+        children: "Coordenadorias"
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["O módulo ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Coordenadorias"
+      }), ", localizado na seção ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Contábil"
+      }), ", é utilizado para cadastrar os diferentes setores, departamentos ou centros de custo da instituição. Este cadastro é essencial para a organização interna e para a alocação de recursos e despesas nos processos de prestação de contas e em outras rotinas financeiras."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "acessando-o-cadastro-de-coordenadorias",
+      children: "Acessando o Cadastro de Coordenadorias"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["No menu lateral, clique em ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Contábil"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Em seguida, acesse a opção ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Coordenadorias"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Você será direcionado para a tela \"Listagem de Coordenadorias\", que exibe todos os departamentos ou setores cadastrados."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Filtro de Coordenadorias"
+        }), ":", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Id"
+            }), ": Permite buscar pelo identificador único da coordenadoria."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nome"
+            }), ": Permite buscar pelo nome da coordenadoria."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Colunas da Listagem"
+        }), ":", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Id"
+            }), ": Identificador único da coordenadoria."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.strong, {
+              children: "Nome"
+            }), ": Nome do setor ou departamento (ex: Teste Coordenadoria 1)."]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Cada item listado possui um botão ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Editar"
+            }), " e um menu de mais opções."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        alt: "Listagem de Coordenadorias",
+        src: (__webpack_require__(809)/* ["default"] */ .A) + "",
+        width: "1920",
+        height: "963"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "criando-ou-editando-uma-coordenadoria",
+      children: "Criando ou Editando uma Coordenadoria"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Para ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "adicionar"
+      }), " uma nova coordenadoria, clique no botão ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "+ Nova Coordenadoria"
+      }), " localizado no canto superior direito.\r\nPara ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "editar"
+      }), " uma coordenadoria existente, localize-a na listagem e utilize o botão ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Editar"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "A tela de \"Manutenção Coordenadoria\" permite configurar o nome da coordenadoria e seus mapeamentos de integração."
     }), "\n", (0,jsx_runtime.jsx)(Admonition/* default */.A, {
       type: "info",
-      title: "Objetivo",
-      children: (0,jsx_runtime.jsx)(_components.p, {
-        children: "Este documento tem como objetivo demonstrar como acessar os dados de pacientes consolidados no FUSION, a partir do Prontuário Eletrônico do Paciente (PEP) MV. Ele fornece orientações básicas para acesso ao FUSION, garantindo segurança e controle de acesso."
+      title: "Campos de Cadastro da Coordenadoria",
+      children: (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Id"
+          }), ": Identificador único da coordenadoria no sistema (ex: 1)."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Nome*"
+          }), ": Campo obrigatório para o nome do setor ou departamento."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Códigos de De/Para"
+          }), ": Seção para mapear a coordenadoria com códigos correspondentes em sistemas externos, como sistemas de ERP ou outros módulos financeiros.", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Integração"
+              }), ": Nome do sistema integrado."]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Código"
+              }), ": Código correspondente no sistema integrado (ex: 7 para Integração MV, 7 para Api HMED)."]
+            }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+              children: "Os campos podem incluir integrações com sistemas como MV, Tasy, HMED, entre outros."
+            }), "\n"]
+          }), "\n"]
+        }), "\n"]
       })
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "acesso-ao-pep",
-      children: "Acesso ao PEP"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Ao acessar o sistema do MV usando seu ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "usuário e senha"
-      }), ", o sistema ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "FUSION"
-      }), " já reconhecerá o seu perfil e aplicará as ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "políticas de privacidade e acesso"
-      }), " que foram parametrizadas no MV."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Tela de Login",
-        src: (__webpack_require__(869)/* ["default"] */ .A) + "",
-        width: "1210",
-        height: "679"
+        alt: "Edição de Coordenadoria",
+        src: (__webpack_require__(7406)/* ["default"] */ .A) + "",
+        width: "1907",
+        height: "960"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "carregamento-do-perfil",
-      children: "Carregamento do Perfil"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["O sistema MV utiliza suas configurações internas para carregar o ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "perfil do usuário logado"
-      }), "."]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Com o perfil de segurança carregado, o MV — já pré-configurado para a integração com o FUSION — ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "herda todas as permissões de acesso"
-      }), ", permitindo que apenas usuários habilitados consultem o prontuário e os dados consolidados no FUSION."]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Acesso ao PEP",
-        src: (__webpack_require__(4229)/* ["default"] */ .A) + "",
-        width: "1195",
-        height: "518"
-      })
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "acesso-ao-fusion-no-mv",
-      children: "Acesso ao FUSION no MV"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Ao clicar no botão ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "FUSION"
-      }), ", localizado na ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "aba superior direita"
-      }), " do MV, será carregada uma tela do sistema FUSION dentro do próprio MV. Nessa tela, você encontrará as ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "informações consolidadas do paciente"
-      }), ", incluindo seus atendimentos organizados de forma ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "cronológica"
-      }), "."]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Repositório de Atendimentos",
-        src: (__webpack_require__(8808)/* ["default"] */ .A) + "",
-        width: "1273",
-        height: "727"
-      })
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "consulta-de-atendimentos-específicos",
-      children: "Consulta de Atendimentos Específicos"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Para acessar os dados de um atendimento específico, ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "clique sobre o atendimento destacado em azul"
-      }), ". O sistema exibirá todas as informações pertinentes ao atendimento selecionado."]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Dados do Atendimento",
-        src: (__webpack_require__(1819)/* ["default"] */ .A) + "",
-        width: "1234",
-        height: "692"
-      })
+      id: "dicas-e-cuidados",
+      children: "Dicas e Cuidados"
     }), "\n", (0,jsx_runtime.jsx)(Admonition/* default */.A, {
       type: "tip",
-      title: "Dica",
-      children: (0,jsx_runtime.jsx)(_components.p, {
-        children: "Se o atendimento não estiver visível, verifique se você possui as permissões corretas no MV ou entre em contato com o suporte técnico."
+      title: "Boas Práticas no Cadastro de Coordenadorias",
+      children: (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Estrutura Organizacional"
+          }), ": Utilize este cadastro para espelhar a estrutura de centros de custo ou o organograma da sua instituição."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Mapeamento para ERP"
+          }), ": A correta configuração dos \"Códigos de De/Para\" é fundamental para a integração com o sistema de gestão empresarial (ERP) da instituição, garantindo que as despesas e receitas sejam alocadas corretamente."]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Nomenclatura Clara"
+          }), ": Use nomes que identifiquem claramente o setor ou departamento para evitar ambiguidades na hora de selecionar a coordenadoria nos processos de prestação de contas."]
+        }), "\n"]
       })
     })]
   });
@@ -348,6 +380,16 @@ const admonitionAliases={secondary:props=>/*#__PURE__*/(0,jsx_runtime.jsx)(Admon
 
 /***/ }),
 
+/***/ 7406:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/edit_coord-2d9ea255a1770d3da378439c87154c68.png");
+
+/***/ }),
+
 /***/ 8453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -440,16 +482,6 @@ function MDXProvider(properties) {
   )
 }
 
-
-/***/ }),
-
-/***/ 8808:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/res-e3db8dbb840f7a500308a71417a12525.png");
 
 /***/ })
 
