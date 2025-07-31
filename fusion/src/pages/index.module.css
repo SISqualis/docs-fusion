@@ -198,8 +198,76 @@
     }
 }
 
-.botao-index::hover {
-    background-color: #005b9c00 !important; /* Accent color for primary button hover */
-    color: #2462a5 !important; /* Ensure text remains readable */
-    border: 1px solid #2462a5 !important; /* Accent color border on hover */
+/* Botões no modo claro - hover com texto azul e borda azul */
+.button.button--primary.botao-index:hover {
+    background-color: transparent !important; /* Fundo transparente */
+    color: #2462a5 !important; /* Texto azul */
+    border: 1px solid #2462a5 !important; /* Borda azul */
+}
+
+/* Seletor adicional para garantir especificidade */
+.featureButton:hover.botao-index {
+    background-color: transparent !important;
+    color: #2462a5 !important;
+    border: 1px solid #2462a5 !important;
+}
+
+/* ===== MODO ESCURO ===== */
+/* Hero Banner no modo escuro */
+[data-theme="dark"] .heroBanner {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Introduction Section no modo escuro */
+[data-theme="dark"] .introductionSection {
+    background-color: #2a2a2a; /* Fundo cinza escuro */
+}
+
+[data-theme="dark"] .sectionTitle {
+    color: #ffffff; /* Títulos brancos */
+}
+
+[data-theme="dark"] .sectionText {
+    color: #e0e0e0; /* Texto cinza claro */
+}
+
+[data-theme="dark"] .sectionText strong {
+    color: #25c2a0; /* Destaque em verde claro */
+}
+
+/* Features Section no modo escuro */
+[data-theme="dark"] .featuresSection {
+    background-color: #1e1e1e; /* Fundo escuro */
+}
+
+/* Feature Cards no modo escuro */
+[data-theme="dark"] .featureBox {
+    background-color: #2d2d2d; /* Fundo do card escuro */
+    border-color: #404040; /* Borda mais escura */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+[data-theme="dark"] .featureBox:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-color: #25c2a0; /* Borda verde claro no hover */
+}
+
+[data-theme="dark"] .featureTitle {
+    color: #ffffff; /* Títulos dos cards brancos */
+}
+
+[data-theme="dark"] .featureDescription {
+    color: #b0b0b0; /* Descrição cinza claro */
+}
+
+[data-theme="dark"] .featureIcon {
+    color: #25c2a0; /* Ícones verde claro */
+}
+
+/* Botões no modo escuro */
+[data-theme="dark"] .botao-index:hover {
+    background-color: transparent !important;
+    color: #25c2a0 !important;
+    border: 1px solid #25c2a0 !important;
 }

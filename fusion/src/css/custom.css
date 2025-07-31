@@ -48,6 +48,21 @@
     --ifm-color-primary-lighter: #32d8b4;
     --ifm-color-primary-lightest: #4fddbf;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    
+    /* Cores específicas para modo escuro */
+    --dyte-sidebar-background: #1b1b1d; /* Fundo escuro da sidebar */
+    --dyte-text-color: #ffffff; /* Texto branco */
+    --dyte-text-color-active: #25c2a0; /* Cor do texto ativo (verde claro) */
+    --dyte-active-bg: rgba(37, 194, 160, 0.1); /* Fundo do item ativo */
+    --dyte-hover-bg: rgba(255, 255, 255, 0.05); /* Fundo do item em hover */
+    --dyte-border-active: #25c2a0; /* Cor da borda do item ativo */
+    
+    /* Sobrepondo variáveis do Infima para modo escuro */
+    --ifm-menu-color: #ffffff; /* Texto da sidebar branco */
+    --ifm-menu-color-active: #25c2a0; /* Texto ativo verde claro */
+    --ifm-navbar-link-color: #ffffff; /* Links da navbar brancos */
+    --ifm-font-color-base: #ffffff; /* Cor base do texto branca */
+    --ifm-heading-color: #ffffff; /* Títulos brancos */
 }
 
 /* src/css/custom.css */
@@ -57,6 +72,30 @@
     font-weight: 600; /* Títulos de categoria mais fortes */
     color: #2d3748; /* Cor mais escura para títulos de categoria */
     margin-top: 0.75rem; /* Espaçamento acima das categorias */
+}
+
+/* Títulos de categoria no modo escuro */
+[data-theme="dark"] .menu__list-item--collapsible > .menu__link {
+    color: #ffffff; /* Títulos brancos no modo escuro */
+}
+
+/* Links da sidebar no modo escuro */
+[data-theme="dark"] .menu__link {
+    color: #ffffff; /* Texto branco */
+}
+
+[data-theme="dark"] .menu__link--active {
+    color: #25c2a0; /* Texto ativo verde claro */
+}
+
+/* Links da navbar no modo escuro */
+[data-theme="dark"] .navbar__link {
+    color: #ffffff !important; /* Força texto branco na navbar */
+}
+
+[data-theme="dark"] .navbar__item.navbar__link.navbar__link--documentation {
+    color: #ffffff !important; /* Força texto branco no link Documentação */
+    border-color: rgba(255, 255, 255, 0.2); /* Borda mais sutil */
 }
 
 /* Estilo da seta de expandir/colapsar */
@@ -107,6 +146,12 @@ a.navbar__item.navbar__link.navbar__link--documentation {
     color: #2160fd;
 }
 
+/* Estilo específico para o link Documentação no modo escuro */
+[data-theme="dark"] a.navbar__item.navbar__link.navbar__link--documentation {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
 a.navbar__item.navbar__link.navbar__button--login {
     border: 1px solid rgb(213 213 213);
     border-radius: 0.375rem;
@@ -123,4 +168,25 @@ a.navbar__item.navbar__link.navbar__button--login {
 
 a.button.button--secondary.button--lg {
     margin-bottom: 20px;
+}
+
+/* Estilos específicos para botões da página index */
+.button.button--primary.botao-index {
+    background-color: var(--ifm-color-primary);
+    border: 1px solid var(--ifm-color-primary);
+    color: #ffffff;
+}
+
+/* Hover dos botões da página index no modo claro */
+.button.button--primary.botao-index:hover {
+    background-color: transparent !important;
+    color: #2462a5 !important;
+    border: 1px solid #2462a5 !important;
+}
+
+/* Hover dos botões da página index no modo escuro */
+[data-theme="dark"] .button.button--primary.botao-index:hover {
+    background-color: transparent !important;
+    color: #25c2a0 !important;
+    border: 1px solid #25c2a0 !important;
 }
